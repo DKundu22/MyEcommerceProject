@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Test Suite" parallel="tests">
+    <listeners>
+        <listener class-name="com.ecommerce.utility.TestListener"/>
+    </listeners>
+
+    <!-- Test for Chrome -->
+    <test name="Chrome Test">
+        <parameter name="browser" value="Chrome"/> <!-- Define browser here -->
+        <classes>
+            <class name="com.ecommerce.testcases.LoginPageTest"/>
+            <class name="com.ecommerce.testcases.RegisterUserTest"/>
+        </classes>
+    </test>
+
+    <!-- Test for Firefox -->
+    <test name="Firefox Test">
+        <parameter name="browser" value="Firefox"/>
+        <classes>
+            <class name="com.ecommerce.testcases.LoginPageTest"/>
+        </classes>
+    </test>
+
+    <!-- Test for Edge -->
+    <test name="Edge Test">
+        <parameter name="browser" value="Edge"/>
+        <classes>
+            <class name="com.ecommerce.testcases.LoginPageTest"/>
+        </classes>
+    </test>
+
+    <!-- Test for Safari    <test name="Safari Test">
+        <parameter name="browser" value="Safari"/>
+        <classes>
+            <class name="com.ecommerce.testcases.LoginPageTest"/>
+        </classes>
+    </test>  -->
+
+
+</suite>
+
+
