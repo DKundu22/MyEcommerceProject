@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +104,21 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Automation_Test_Suite" title="com.ecommerce.testcases.RegisterUserTest" class="method navigator-link" hash-for-method="registerUser({Zip=M5H 2N2, Company=SampleCo, Email=jane.roe1@test.com, Address=456 Oak Road, FirstName=Jane, Addr...)">registerUser({Zip=M5H 2N2, Company=SampleCo, Email=jane.roe1@test.com, Address=456 Oak Road, FirstName=Jane, Addr...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Test_Suite" title="com.ecommerce.testcases.ProductsPageTest" class="method navigator-link" hash-for-method="verifyAllProductsAndProductDetailPage">verifyAllProductsAndProductDetailPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Test_Suite" title="com.ecommerce.testcases.ProductsPageTest" class="method navigator-link" hash-for-method="verifyAllProductsAndProductDetailPage">verifyAllProductsAndProductDetailPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Test_Suite" title="com.ecommerce.testcases.ProductsPageTest" class="method navigator-link" hash-for-method="verifyAllProductsAndProductDetailPage">verifyAllProductsAndProductDetailPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -165,6 +180,35 @@
           <div class="suite-Automation_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.ecommerce.testcases.ProductsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAllProductsAndProductDetailPage">
+                  </a> <!-- verifyAllProductsAndProductDetailPage -->
+                  <span class="method-name">verifyAllProductsAndProductDetailPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAllProductsAndProductDetailPage">
+                  </a> <!-- verifyAllProductsAndProductDetailPage -->
+                  <span class="method-name">verifyAllProductsAndProductDetailPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAllProductsAndProductDetailPage">
+                  </a> <!-- verifyAllProductsAndProductDetailPage -->
+                  <span class="method-name">verifyAllProductsAndProductDetailPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Test_Suite-class-passed -->
+          <div class="suite-Automation_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.ecommerce.testcases.RegisterUserTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -196,18 +240,21 @@
     &lt;classes&gt;
       &lt;class name=&quot;com.ecommerce.testcases.LoginPageTest&quot;/&gt;
       &lt;class name=&quot;com.ecommerce.testcases.RegisterUserTest&quot;/&gt;
+      &lt;class name=&quot;com.ecommerce.testcases.ProductsPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Chrome Test --&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Firefox Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.ecommerce.testcases.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.ecommerce.testcases.ProductsPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Firefox Test --&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Edge Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.ecommerce.testcases.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.ecommerce.testcases.ProductsPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Edge Test --&gt;
 &lt;/suite&gt; &lt;!-- Automation Test Suite --&gt;
@@ -221,13 +268,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Chrome Test (2 classes)</span>
+                <span class="test-name">Chrome Test (3 classes)</span>
               </li>
               <li>
-                <span class="test-name">Firefox Test (1 class)</span>
+                <span class="test-name">Firefox Test (2 classes)</span>
               </li>
               <li>
-                <span class="test-name">Edge Test (1 class)</span>
+                <span class="test-name">Edge Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -253,28 +300,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'registerUser')
 data.setCell(0, 2, 'com.ecommerce.testcases.RegisterUserTest')
-data.setCell(0, 3, 56884);
+data.setCell(0, 3, 49281);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyLogin')
 data.setCell(1, 2, 'com.ecommerce.testcases.LoginPageTest')
-data.setCell(1, 3, 12108);
+data.setCell(1, 3, 15843);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLogin')
-data.setCell(2, 2, 'com.ecommerce.testcases.LoginPageTest')
-data.setCell(2, 3, 6821);
+data.setCell(2, 1, 'verifyAllProductsAndProductDetailPage')
+data.setCell(2, 2, 'com.ecommerce.testcases.ProductsPageTest')
+data.setCell(2, 3, 7634);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyLogin')
-data.setCell(3, 2, 'com.ecommerce.testcases.LoginPageTest')
-data.setCell(3, 3, 2243);
+data.setCell(3, 1, 'verifyAllProductsAndProductDetailPage')
+data.setCell(3, 2, 'com.ecommerce.testcases.ProductsPageTest')
+data.setCell(3, 3, 7452);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyLogin')
+data.setCell(4, 2, 'com.ecommerce.testcases.LoginPageTest')
+data.setCell(4, 3, 5497);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyAllProductsAndProductDetailPage')
+data.setCell(5, 2, 'com.ecommerce.testcases.ProductsPageTest')
+data.setCell(5, 3, 2689);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyLogin')
+data.setCell(6, 2, 'com.ecommerce.testcases.LoginPageTest')
+data.setCell(6, 3, 2394);
 window.suiteTableData['Automation_Test_Suite']= { tableData: data, tableDiv: 'times-div-Automation_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Automation_Test_Suite">
               </div> <!-- times-div-Automation_Test_Suite -->
             </div> <!-- times-div -->
@@ -289,15 +348,32 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Automation_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">8 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.ecommerce.testcases.RegisterUserTest</span>
+              <span class="ignored-class-name">com.ecommerce.testcases.ProductsPageTest</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
                 <span class="ignored-method-name">afterSuite</span>
                 <br/>
                 <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.ecommerce.testcases.RegisterUserTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -316,61 +392,118 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">25 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(Firefox)</span>
-                <span class="method-start">25 ms</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Edge)</span>
-                <span class="method-start">25 ms</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Firefox)</span>
+                <span class="method-start">31 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLogin</span>
-                <span class="method-start">39074 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyLogin status=SUCCESS method=LoginPageTest.verifyLogin()[pri:0, instance:com.e...)</span>
-                <span class="method-start">45902 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verifyLogin</span>
-                <span class="method-start">47763 ms</span>
+                <span class="method-start">4540 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyLogin</span>
-                <span class="method-start">50053 ms</span>
+                <span class="method-start">9625 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLogin</span>
+                <span class="method-start">11889 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyLogin status=SUCCESS method=LoginPageTest.verifyLogin()[pri:0, instance:com.e...)</span>
-                <span class="method-start">52300 ms</span>
+                <span class="method-start">14317 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ecommerce.testcases.ProductsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Firefox)</span>
+                <span class="method-start">15012 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ecommerce.testcases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyLogin status=SUCCESS method=LoginPageTest.verifyLogin()[pri:0, instance:com.e...)</span>
-                <span class="method-start">59872 ms</span>
+                <span class="method-start">15124 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ecommerce.testcases.ProductsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Edge)</span>
+                <span class="method-start">16355 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ecommerce.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyLogin status=SUCCESS method=LoginPageTest.verifyLogin()[pri:0, instance:com.e...)</span>
+                <span class="method-start">20386 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ecommerce.testcases.RegisterUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">60252 ms</span>
+                <span class="method-start">20807 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ecommerce.testcases.ProductsPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyAllProductsAndProductDetailPage</span>
+                <span class="method-start">25073 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAllProductsAndProductDetailPage</span>
+                <span class="method-start">26407 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyAllProductsAndProductDetailPage status=SUCCESS method=ProductsPageTest.verify...)</span>
+                <span class="method-start">27773 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyAllProductsAndProductDetailPage status=SUCCESS method=ProductsPageTest.verify...)</span>
+                <span class="method-start">34044 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ecommerce.testcases.RegisterUserTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">registerUser({Zip=M5H 2N2, Company=SampleCo, Email=jane.roe1@test.com, Address=456 Oak Road, FirstName=Jane, Addr...)</span>
-                <span class="method-start">111525 ms</span>
+                <span class="method-start">143910 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=registerUser status=SUCCESS method=RegisterUserTest.registerUser(java.util.Map)[pri...)</span>
-                <span class="method-start">168411 ms</span>
+                <span class="method-start">193193 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ecommerce.testcases.ProductsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Chrome)</span>
+                <span class="method-start">193322 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAllProductsAndProductDetailPage</span>
+                <span class="method-start">198509 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyAllProductsAndProductDetailPage status=SUCCESS method=ProductsPageTest.verify...)</span>
+                <span class="method-start">205966 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ecommerce.testcases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">168536 ms</span>
+                <span class="method-start">206097 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
