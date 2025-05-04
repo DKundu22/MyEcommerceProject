@@ -1,51 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-01T22:45:03 IST" name="Automation Test Suite" finished-at="2025-05-01T22:47:51 IST" duration-ms="168511">
+  <suite started-at="2025-05-04T22:59:11 IST" name="Automation Test Suite" finished-at="2025-05-04T23:02:37 IST" duration-ms="206064">
     <groups>
     </groups>
-    <test started-at="2025-05-01T22:45:03 IST" name="Edge Test" finished-at="2025-05-01T22:45:50 IST" duration-ms="47043">
+    <test started-at="2025-05-04T22:59:11 IST" name="Firefox Test" finished-at="2025-05-04T22:59:40 IST" duration-ms="28362">
       <class name="com.ecommerce.testcases.LoginPageTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.ecommerce.testcases.LoginPageTest@c4ed84]" started-at="2025-05-01T22:45:03 IST" name="beforeSuite" finished-at="2025-05-01T22:45:03 IST" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.testcases.LoginPageTest@c4ed84]" started-at="2025-05-01T22:45:03 IST" name="setUp" finished-at="2025-05-01T22:45:42 IST" duration-ms="39047" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin()[pri:0, instance:com.ecommerce.testcases.LoginPageTest@c4ed84]" started-at="2025-05-01T22:45:42 IST" name="verifyLogin" finished-at="2025-05-01T22:45:49 IST" duration-ms="6821" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ecommerce.testcases.LoginPageTest@c4ed84]" started-at="2025-05-01T22:45:49 IST" name="tearDown" finished-at="2025-05-01T22:45:50 IST" duration-ms="1149" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLogin status=SUCCESS method=LoginPageTest.verifyLogin()[pri:0, instance:com.ecommerce.testcases.LoginPageTest@c4ed84] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.ecommerce.testcases.LoginPageTest@c4ed84]" started-at="2025-05-01T22:47:51 IST" name="afterSuite" finished-at="2025-05-01T22:47:51 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.ecommerce.testcases.LoginPageTest -->
-    </test> <!-- Edge Test -->
-    <test started-at="2025-05-01T22:45:03 IST" name="Firefox Test" finished-at="2025-05-01T22:45:56 IST" duration-ms="52897">
-      <class name="com.ecommerce.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.testcases.LoginPageTest@373ebf74]" started-at="2025-05-01T22:45:03 IST" name="setUp" finished-at="2025-05-01T22:45:53 IST" duration-ms="50027" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.testcases.LoginPageTest@189aa67a]" started-at="2025-05-04T22:59:11 IST" name="setUp" finished-at="2025-05-04T22:59:23 IST" duration-ms="11858" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin()[pri:0, instance:com.ecommerce.testcases.LoginPageTest@373ebf74]" started-at="2025-05-01T22:45:53 IST" name="verifyLogin" finished-at="2025-05-01T22:45:55 IST" duration-ms="2243" status="PASS">
+        <test-method signature="verifyLogin()[pri:0, instance:com.ecommerce.testcases.LoginPageTest@189aa67a]" started-at="2025-05-04T22:59:23 IST" name="verifyLogin" finished-at="2025-05-04T22:59:26 IST" duration-ms="2394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ecommerce.testcases.LoginPageTest@373ebf74]" started-at="2025-05-01T22:45:55 IST" name="tearDown" finished-at="2025-05-01T22:45:56 IST" duration-ms="607" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ecommerce.testcases.LoginPageTest@189aa67a]" started-at="2025-05-04T22:59:26 IST" name="tearDown" finished-at="2025-05-04T22:59:26 IST" duration-ms="694" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLogin status=SUCCESS method=LoginPageTest.verifyLogin()[pri:0, instance:com.ecommerce.testcases.LoginPageTest@373ebf74] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLogin status=SUCCESS method=LoginPageTest.verifyLogin()[pri:0, instance:com.ecommerce.testcases.LoginPageTest@189aa67a] output={null}]]]>
               </value>
             </param>
           </params>
@@ -72,10 +34,104 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ecommerce.testcases.LoginPageTest -->
+      <class name="com.ecommerce.testcases.ProductsPageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.testcases.ProductsPageTest@5a9d6f02]" started-at="2025-05-04T22:59:26 IST" name="setUp" finished-at="2025-05-04T22:59:36 IST" duration-ms="10060" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAllProductsAndProductDetailPage()[pri:0, instance:com.ecommerce.testcases.ProductsPageTest@5a9d6f02]" started-at="2025-05-04T22:59:36 IST" name="verifyAllProductsAndProductDetailPage" finished-at="2025-05-04T22:59:39 IST" duration-ms="2689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllProductsAndProductDetailPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ecommerce.testcases.ProductsPageTest@5a9d6f02]" started-at="2025-05-04T22:59:39 IST" name="tearDown" finished-at="2025-05-04T22:59:40 IST" duration-ms="599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAllProductsAndProductDetailPage status=SUCCESS method=ProductsPageTest.verifyAllProductsAndProductDetailPage()[pri:0, instance:com.ecommerce.testcases.ProductsPageTest@5a9d6f02] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ecommerce.testcases.ProductsPageTest -->
     </test> <!-- Firefox Test -->
-    <test started-at="2025-05-01T22:45:03 IST" name="Chrome Test" finished-at="2025-05-01T22:47:51 IST" duration-ms="168511">
+    <test started-at="2025-05-04T22:59:11 IST" name="Edge Test" finished-at="2025-05-04T22:59:47 IST" duration-ms="35154">
       <class name="com.ecommerce.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.testcases.LoginPageTest@158d2680]" started-at="2025-05-01T22:45:03 IST" name="setUp" finished-at="2025-05-01T22:45:51 IST" duration-ms="47738" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.ecommerce.testcases.LoginPageTest@112f364d]" started-at="2025-05-04T22:59:11 IST" name="beforeSuite" finished-at="2025-05-04T22:59:11 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.testcases.LoginPageTest@112f364d]" started-at="2025-05-04T22:59:11 IST" name="setUp" finished-at="2025-05-04T22:59:21 IST" duration-ms="9594" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLogin()[pri:0, instance:com.ecommerce.testcases.LoginPageTest@112f364d]" started-at="2025-05-04T22:59:21 IST" name="verifyLogin" finished-at="2025-05-04T22:59:27 IST" duration-ms="5497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ecommerce.testcases.LoginPageTest@112f364d]" started-at="2025-05-04T22:59:27 IST" name="tearDown" finished-at="2025-05-04T22:59:28 IST" duration-ms="1229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogin status=SUCCESS method=LoginPageTest.verifyLogin()[pri:0, instance:com.ecommerce.testcases.LoginPageTest@112f364d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.ecommerce.testcases.LoginPageTest@112f364d]" started-at="2025-05-04T23:02:38 IST" name="afterSuite" finished-at="2025-05-04T23:02:38 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.ecommerce.testcases.LoginPageTest -->
+      <class name="com.ecommerce.testcases.ProductsPageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.testcases.ProductsPageTest@5ccbeb64]" started-at="2025-05-04T22:59:28 IST" name="setUp" finished-at="2025-05-04T22:59:38 IST" duration-ms="10052" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAllProductsAndProductDetailPage()[pri:0, instance:com.ecommerce.testcases.ProductsPageTest@5ccbeb64]" started-at="2025-05-04T22:59:38 IST" name="verifyAllProductsAndProductDetailPage" finished-at="2025-05-04T22:59:45 IST" duration-ms="7634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllProductsAndProductDetailPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ecommerce.testcases.ProductsPageTest@5ccbeb64]" started-at="2025-05-04T22:59:45 IST" name="tearDown" finished-at="2025-05-04T22:59:47 IST" duration-ms="1124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAllProductsAndProductDetailPage status=SUCCESS method=ProductsPageTest.verifyAllProductsAndProductDetailPage()[pri:0, instance:com.ecommerce.testcases.ProductsPageTest@5ccbeb64] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ecommerce.testcases.ProductsPageTest -->
+    </test> <!-- Edge Test -->
+    <test started-at="2025-05-04T22:59:11 IST" name="Chrome Test" finished-at="2025-05-04T23:02:37 IST" duration-ms="206064">
+      <class name="com.ecommerce.testcases.LoginPageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.testcases.LoginPageTest@7f3b84b8]" started-at="2025-05-04T22:59:11 IST" name="setUp" finished-at="2025-05-04T22:59:16 IST" duration-ms="4507" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,15 +142,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin()[pri:0, instance:com.ecommerce.testcases.LoginPageTest@158d2680]" started-at="2025-05-01T22:45:51 IST" name="verifyLogin" finished-at="2025-05-01T22:46:03 IST" duration-ms="12108" status="PASS">
+        <test-method signature="verifyLogin()[pri:0, instance:com.ecommerce.testcases.LoginPageTest@7f3b84b8]" started-at="2025-05-04T22:59:16 IST" name="verifyLogin" finished-at="2025-05-04T22:59:32 IST" duration-ms="15843" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ecommerce.testcases.LoginPageTest@158d2680]" started-at="2025-05-01T22:46:03 IST" name="tearDown" finished-at="2025-05-01T22:46:03 IST" duration-ms="99" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ecommerce.testcases.LoginPageTest@7f3b84b8]" started-at="2025-05-04T22:59:32 IST" name="tearDown" finished-at="2025-05-04T22:59:32 IST" duration-ms="111" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLogin status=SUCCESS method=LoginPageTest.verifyLogin()[pri:0, instance:com.ecommerce.testcases.LoginPageTest@158d2680] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLogin status=SUCCESS method=LoginPageTest.verifyLogin()[pri:0, instance:com.ecommerce.testcases.LoginPageTest@7f3b84b8] output={null}]]]>
               </value>
             </param>
           </params>
@@ -102,8 +158,8 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ecommerce.testcases.LoginPageTest -->
-      <class name="com.ecommerce.testcases.RegisterUserTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.testcases.RegisterUserTest@ebaa6cb]" started-at="2025-05-01T22:46:03 IST" name="setUp" finished-at="2025-05-01T22:46:54 IST" duration-ms="51273" status="PASS">
+      <class name="com.ecommerce.testcases.ProductsPageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.testcases.ProductsPageTest@436bc36]" started-at="2025-05-04T23:02:25 IST" name="setUp" finished-at="2025-05-04T23:02:30 IST" duration-ms="5187" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -114,7 +170,35 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="registerUser(java.util.Map)[pri:0, instance:com.ecommerce.testcases.RegisterUserTest@ebaa6cb]" started-at="2025-05-01T22:46:54 IST" name="registerUser" data-provider="userData" finished-at="2025-05-01T22:47:51 IST" duration-ms="56884" status="PASS">
+        <test-method signature="verifyAllProductsAndProductDetailPage()[pri:0, instance:com.ecommerce.testcases.ProductsPageTest@436bc36]" started-at="2025-05-04T23:02:30 IST" name="verifyAllProductsAndProductDetailPage" finished-at="2025-05-04T23:02:37 IST" duration-ms="7452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllProductsAndProductDetailPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ecommerce.testcases.ProductsPageTest@436bc36]" started-at="2025-05-04T23:02:37 IST" name="tearDown" finished-at="2025-05-04T23:02:37 IST" duration-ms="112" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAllProductsAndProductDetailPage status=SUCCESS method=ProductsPageTest.verifyAllProductsAndProductDetailPage()[pri:0, instance:com.ecommerce.testcases.ProductsPageTest@436bc36] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ecommerce.testcases.ProductsPageTest -->
+      <class name="com.ecommerce.testcases.RegisterUserTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.ecommerce.testcases.RegisterUserTest@49d3c823]" started-at="2025-05-04T22:59:32 IST" name="setUp" finished-at="2025-05-04T23:01:35 IST" duration-ms="123102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registerUser(java.util.Map)[pri:0, instance:com.ecommerce.testcases.RegisterUserTest@49d3c823]" started-at="2025-05-04T23:01:35 IST" name="registerUser" data-provider="userData" finished-at="2025-05-04T23:02:25 IST" duration-ms="49281" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -125,11 +209,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerUser -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ecommerce.testcases.RegisterUserTest@ebaa6cb]" started-at="2025-05-01T22:47:51 IST" name="tearDown" finished-at="2025-05-01T22:47:51 IST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ecommerce.testcases.RegisterUserTest@49d3c823]" started-at="2025-05-04T23:02:25 IST" name="tearDown" finished-at="2025-05-04T23:02:25 IST" duration-ms="129" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=registerUser status=SUCCESS method=RegisterUserTest.registerUser(java.util.Map)[pri:0, instance:com.ecommerce.testcases.RegisterUserTest@ebaa6cb] output={null}]]]>
+                <![CDATA[[TestResult name=registerUser status=SUCCESS method=RegisterUserTest.registerUser(java.util.Map)[pri:0, instance:com.ecommerce.testcases.RegisterUserTest@49d3c823] output={null}]]]>
               </value>
             </param>
           </params>

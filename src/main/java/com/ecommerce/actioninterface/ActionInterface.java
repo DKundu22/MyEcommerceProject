@@ -14,6 +14,7 @@ public interface ActionInterface {
     boolean selectByValue(String value, WebElement element);
     boolean selectByIndex(int index, WebElement element);
     void scrollByVisibilityOfElement(WebDriver driver, WebElement element);
+    void scrollIntoView(WebDriver driver, WebElement element);
     String screenShot(WebDriver driver, String filename);
 }
 

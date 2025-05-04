@@ -7,15 +7,29 @@
   <test thread-count="5" parallel="tests" name="Chrome Test(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.ecommerce.testcases.RegisterUserTest">
+      <class name="com.ecommerce.testcases.ProductsPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="registerUser" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+          <include name="verifyAllProductsAndProductDetailPage"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.ecommerce.testcases.ProductsPageTest -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Edge Test(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="com.ecommerce.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyLogin"/>
           <include name="tearDown"/>
           <include name="afterSuite"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- com.ecommerce.testcases.RegisterUserTest -->
+      </class> <!-- com.ecommerce.testcases.LoginPageTest -->
     </classes>
-  </test> <!-- Chrome Test(failed) -->
+  </test> <!-- Edge Test(failed) -->
 </suite> <!-- Failed suite [Automation Test Suite] -->

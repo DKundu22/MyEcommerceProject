@@ -74,7 +74,7 @@ public class BaseClass {
         try {
             prop = new Properties();
             String path = System.getProperty("user.dir") + "/Configuration/Config.properties";
-            Log.info("Trying to load config from: " + path);
+            Log.info("Loading configuration properties...");
             FileInputStream ip = new FileInputStream(path);
             prop.load(ip);
             Log.info("Loaded configuration properties.");
