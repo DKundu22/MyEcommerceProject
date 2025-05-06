@@ -100,7 +100,7 @@
             <version>3.1.2</version> <!-- Latest and stable -->
             <configuration>
                 <suiteXmlFiles>
-                    <suiteXmlFile>${xmlFiles}</suiteXmlFile>
+                    <suiteXmlFile>testng.xml</suiteXmlFile>
                 </suiteXmlFiles>
                 <systemPropertyVariables>
                     <appURL>${url}</appURL>

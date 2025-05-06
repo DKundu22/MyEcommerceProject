@@ -83,3 +83,88 @@
 2025-05-04 23:02:37 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - ---- ENDING TEST CASE: verifyAllProductsAndProductDetailPage ----
 2025-05-04 23:02:37 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Closing browser...
 2025-05-04 23:02:38 [main] INFO  com.ecommerce.utility.Log - === END SUITE === Automation Test Suite Finished
+2025-05-06 06:51:36 [main] INFO  com.ecommerce.utility.Log - Loading configuration properties...
+2025-05-06 06:51:36 [main] INFO  com.ecommerce.utility.Log - Loaded configuration properties.
+2025-05-06 06:51:36 [main] INFO  com.ecommerce.utility.Log - === START SUITE === Automation Test Suite Started
+2025-05-06 06:51:36 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - Launching browser: Firefox
+2025-05-06 06:51:36 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Launching browser: Chrome
+2025-05-06 06:51:36 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - Launching browser: Edge
+2025-05-06 06:51:47 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-05-06 06:51:48 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - ---- STARTING TEST CASE: verifyLogin ----
+2025-05-06 06:51:48 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - LoginPage object initialized.
+2025-05-06 06:51:48 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Verifying home page visibility.
+2025-05-06 06:51:48 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Navigating to login page.
+2025-05-06 06:51:51 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Checking login title visibility.
+2025-05-06 06:51:51 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Entering email and password.
+2025-05-06 06:51:51 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-05-06 06:51:51 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - ---- STARTING TEST CASE: verifyLogin ----
+2025-05-06 06:51:51 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - LoginPage object initialized.
+2025-05-06 06:51:51 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - Verifying home page visibility.
+2025-05-06 06:51:52 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - Navigating to login page.
+2025-05-06 06:51:52 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - Checking login title visibility.
+2025-05-06 06:51:53 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - Entering email and password.
+2025-05-06 06:51:54 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-05-06 06:51:54 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - ---- STARTING TEST CASE: verifyLogin ----
+2025-05-06 06:51:54 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - LoginPage object initialized.
+2025-05-06 06:51:54 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - Verifying home page visibility.
+2025-05-06 06:51:54 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - Navigating to login page.
+2025-05-06 06:51:54 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - Verifying logged in username. Expected: Dinesh Paul, Actual: Dinesh Paul
+2025-05-06 06:51:54 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - ---- ENDING TEST CASE: verifyLogin ----
+2025-05-06 06:51:54 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-05-06 06:51:55 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - Launching browser: Firefox
+2025-05-06 06:51:56 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - Checking login title visibility.
+2025-05-06 06:51:56 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - Entering email and password.
+2025-05-06 06:51:58 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Verifying logged in username. Expected: Dinesh Paul, Actual: Dinesh Paul
+2025-05-06 06:51:58 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - ---- ENDING TEST CASE: verifyLogin ----
+2025-05-06 06:51:58 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-05-06 06:51:59 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Launching browser: Chrome
+2025-05-06 06:52:00 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - Verifying logged in username. Expected: Dinesh Paul, Actual: Dinesh Paul
+2025-05-06 06:52:00 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - ---- ENDING TEST CASE: verifyLogin ----
+2025-05-06 06:52:00 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-05-06 06:52:01 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - Launching browser: Edge
+2025-05-06 06:52:07 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-05-06 06:52:07 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - ---- STARTING TEST CASE: verifyAllProductsAndProductDetailPage ----
+2025-05-06 06:52:07 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - ProductsPage object initialized.
+2025-05-06 06:52:07 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - Verifying home page visibility.
+2025-05-06 06:52:07 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - Clicking on 'Products' button.
+2025-05-06 06:52:07 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - Verifying All Products page visibility.
+2025-05-06 06:52:08 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-05-06 06:52:08 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - ---- STARTING TEST CASE: resiterUser ----
+2025-05-06 06:52:08 [TestNG-tests-1] INFO  com.ecommerce.testcases.RegisterUserTest - Navigating to Signup/Login Page...
+2025-05-06 06:52:08 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - Verifying products list visibility.
+2025-05-06 06:52:08 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - Clicking on 'View Product' of first product.
+2025-05-06 06:52:08 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - Verifying product details are visible.
+2025-05-06 06:52:10 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-05-06 06:52:10 [TestNG-tests-1] INFO  com.ecommerce.testcases.RegisterUserTest - Entering signup details with name: Jane Roe and email: jane.roe1@test.com
+2025-05-06 06:52:10 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - ---- STARTING TEST CASE: verifyAllProductsAndProductDetailPage ----
+2025-05-06 06:52:10 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - ProductsPage object initialized.
+2025-05-06 06:52:10 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - Verifying home page visibility.
+2025-05-06 06:52:10 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - Clicking on 'Products' button.
+2025-05-06 06:52:10 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - ---- ENDING TEST CASE: verifyAllProductsAndProductDetailPage ----
+2025-05-06 06:52:10 [TestNG-tests-2] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-05-06 06:52:10 [TestNG-tests-1] INFO  com.ecommerce.testcases.RegisterUserTest - Filling user registration details...
+2025-05-06 06:52:14 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - Verifying All Products page visibility.
+2025-05-06 06:52:14 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - Verifying products list visibility.
+2025-05-06 06:52:14 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - Clicking on 'View Product' of first product.
+2025-05-06 06:52:17 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - Verifying product details are visible.
+2025-05-06 06:52:17 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - ---- ENDING TEST CASE: verifyAllProductsAndProductDetailPage ----
+2025-05-06 06:52:17 [TestNG-tests-3] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-05-06 06:52:41 [TestNG-tests-1] INFO  com.ecommerce.testcases.RegisterUserTest - Verifying account creation...
+2025-05-06 06:52:41 [TestNG-tests-1] INFO  com.ecommerce.testcases.RegisterUserTest - Account created successfully.
+2025-05-06 06:52:45 [TestNG-tests-1] INFO  com.ecommerce.testcases.RegisterUserTest - Attempting to delete the created account...
+2025-05-06 06:52:46 [TestNG-tests-1] INFO  com.ecommerce.testcases.RegisterUserTest - Account deleted successfully.
+2025-05-06 06:52:48 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - ---- ENDING TEST CASE: resiterUser ----
+2025-05-06 06:52:48 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-05-06 06:52:48 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Launching browser: Chrome
+2025-05-06 06:52:55 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-05-06 06:52:55 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - ---- STARTING TEST CASE: verifyAllProductsAndProductDetailPage ----
+2025-05-06 06:52:55 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - ProductsPage object initialized.
+2025-05-06 06:52:55 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Verifying home page visibility.
+2025-05-06 06:52:55 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicking on 'Products' button.
+2025-05-06 06:52:59 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Verifying All Products page visibility.
+2025-05-06 06:52:59 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Verifying products list visibility.
+2025-05-06 06:52:59 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicking on 'View Product' of first product.
+2025-05-06 06:53:05 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Verifying product details are visible.
+2025-05-06 06:53:05 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - ---- ENDING TEST CASE: verifyAllProductsAndProductDetailPage ----
+2025-05-06 06:53:05 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-05-06 06:53:06 [main] INFO  com.ecommerce.utility.Log - === END SUITE === Automation Test Suite Finished
