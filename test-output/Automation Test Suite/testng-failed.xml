@@ -4,20 +4,6 @@
   <listeners>
     <listener class-name="com.ecommerce.utility.TestListener"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Chrome Test(failed)">
-    <parameter name="browser" value="Chrome"/>
-    <classes>
-      <class name="com.ecommerce.testcases.ProductsPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="verifyAllProductsAndProductDetailPage"/>
-          <include name="afterSuite"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- com.ecommerce.testcases.ProductsPageTest -->
-    </classes>
-  </test> <!-- Chrome Test(failed) -->
   <test thread-count="5" parallel="tests" name="Edge Test(failed)">
     <parameter name="browser" value="Edge"/>
     <classes>

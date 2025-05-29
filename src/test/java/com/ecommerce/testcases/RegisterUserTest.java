@@ -3,8 +3,6 @@ package com.ecommerce.testcases;
 import com.ecommerce.base.BaseClass;
 import com.ecommerce.pageobjects.RegisterPage;
 import com.ecommerce.utility.ExcelUtil;
-import com.ecommerce.utility.Log;
-
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -14,57 +12,77 @@ import org.apache.logging.log4j.Logger;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Test Case: Register a new user using data-driven approach.
+ * Steps:
+ * 1. Navigate to Signup/Login page
+ * 2. Enter name and email to initiate signup
+ * 3. Fill full registration form
+ * 4. Verify account creation
+ * 5. Click Continue to login
+ * 6. Verify "Logged in as <username>" is visible
+ * 7. Delete account and verify deletion
+ */
+
 public class RegisterUserTest extends BaseClass {
-    Logger log = LogManager.getLogger(RegisterUserTest.class);
+
+    private static final Logger log = LogManager.getLogger(RegisterUserTest.class);
+    private RegisterPage registerPage;
 
     @DataProvider(name = "userData")
     public Object[][] getUserData() {
         List<Map<String, String>> testData = ExcelUtil.getTestData("Sheet1");
         Object[][] data = new Object[testData.size()][1];
-
         for (int i = 0; i < testData.size(); i++) {
             data[i][0] = testData.get(i);
         }
         return data;
     }
 
-    @Test(dataProvider = "userData")
+    @Test(dataProvider = "userData", groups = {"Regression"})
     public void registerUser(Map<String, String> userData) {
-    	
-        Log.startTestCase("resiterUser");
+        log.info("===== Starting Test: registerUser =====");
 
-        RegisterPage registerPage = new RegisterPage();
-        log.info("Navigating to Signup/Login Page...");
-        registerPage.navigateToRegister();
+        try {
+            registerPage = new RegisterPage();
+            log.debug("RegisterPage object instantiated.");
 
-        log.info("Entering signup details with name: " + userData.get("Name") + " and email: " + userData.get("Email"));
-        registerPage.enterSignupDetails(userData.get("Name"), userData.get("Email"));
+            // Step 1: Navigate to Signup/Login page
+            registerPage.navigateToRegister();
+            log.info("Step 1 passed: Navigated to Signup/Login page.");
 
-        log.info("Filling user registration details...");
-        registerPage.fillAccountDetails(userData);
+            // Step 2: Enter name and email
+            log.debug("Entering name: {} and email: {}", userData.get("Name"), userData.get("Email"));
+            registerPage.enterSignupDetails(userData.get("Name"), userData.get("Email"));
+            log.info("Step 2 passed: Signup details submitted.");
 
-        log.info("Verifying account creation...");
-        Assert.assertTrue(registerPage.isAccountCreatedVisible(), "Account creation failed.");
-        log.info("Account created successfully.");
-        
-        // Click Continue
-        registerPage.clickContinue();
+            // Step 3: Fill the complete account registration form
+            registerPage.fillAccountDetails(userData);
+            log.info("Step 3 passed: Registration form filled and submitted.");
 
-        // Verify 'Logged in as username' is visible
-        Assert.assertTrue(registerPage.isLoggedInAsVisible(), "'Logged in as username' not visible.");
+            // Step 4: Verify "Account Created!" is visible
+            Assert.assertTrue(registerPage.isAccountCreatedVisible(), "Account creation confirmation not displayed.");
+            log.info("Step 4 passed: Account creation confirmed.");
 
+            // Step 5: Click "Continue" after account creation
+            registerPage.clickContinue();
+            log.info("Step 5 passed: Clicked Continue button.");
 
-        log.info("Attempting to delete the created account...");
-        registerPage.deleteAccount();
-        Assert.assertTrue(registerPage.isAccountDeletedVisible(), "Account deletion failed.");
-        log.info("Account deleted successfully.");
-        
-     // Click Continue after deletion
-        registerPage.clickContinue();
-        
-        Log.endTestCase("resiterUser");
+            // Step 6: Verify "Logged in as <username>" is visible
+            Assert.assertTrue(registerPage.isLoggedInAsVisible(), "'Logged in as' not visible after login.");
+            log.info("Step 6 passed: Logged in as username verified.");
 
+            // Step 7: Delete the created account and verify deletion
+            registerPage.deleteAccount();
+            Assert.assertTrue(registerPage.isAccountDeletedVisible(), "Account deletion message not visible.");
+            log.info("Step 7 passed: Account deletion confirmed.");
 
+            registerPage.clickContinue();
+            log.info("===== Test Passed: registerUser =====");
+
+        } catch (Exception e) {
+            log.error("Test execution failed: ", e);
+            Assert.fail("Test failed due to unexpected error: " + e.getMessage());
+        }
     }
 }
-

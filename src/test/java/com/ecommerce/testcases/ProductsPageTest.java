@@ -2,50 +2,68 @@ package com.ecommerce.testcases;
 
 import com.ecommerce.base.BaseClass;
 import com.ecommerce.pageobjects.ProductsPage;
-import com.ecommerce.utility.Log;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
+/**
+ * Test Case: Verify products listing and product detail page.
+ * Steps:
+ * 1. Verify homepage is visible
+ * 2. Click on 'Products' button
+ * 3. Verify 'All Products' page is visible
+ * 4. Verify products list is visible
+ * 5. Click on 'View Product' of first product
+ * 6. Verify product details visibility
+ */
 public class ProductsPageTest extends BaseClass {
 
-    ProductsPage productsPage;
+    private static final Logger log = LogManager.getLogger(ProductsPageTest.class);
+    private ProductsPage productsPage;
 
-    @Test
+    @Test(groups = {"Smoke","Regression"})
     public void verifyAllProductsAndProductDetailPage() {
-        Log.startTestCase("verifyAllProductsAndProductDetailPage");
+        log.info("===== Starting Test: verifyAllProductsAndProductDetailPage =====");
 
-        productsPage = new ProductsPage();
-        Log.info("ProductsPage object initialized.");
+        try {
+            productsPage = new ProductsPage();
+            log.debug("ProductsPage object instantiated.");
 
-        // Step 3: Verify home page
-        Log.info("Verifying home page visibility.");
-        Assert.assertTrue(productsPage.isHomePageVisible(), "Home page is not visible.");
+            // Step 1: Verify home page visibility
+            Assert.assertTrue(productsPage.isHomePageVisible(), "Home page is not visible.");
+            log.info("Step 1 passed: Home page is visible.");
 
-        // Step 4: Click on 'Products'
-        Log.info("Clicking on 'Products' button.");
-        productsPage.clickOnProductsButton();
+            // Step 2: Click on 'Products' button
+            productsPage.clickOnProductsButton();
+            log.info("Step 2 passed: Clicked on 'Products' button.");
 
-        // Step 5: Verify All Products page
-        Log.info("Verifying All Products page visibility.");
-        Assert.assertTrue(productsPage.isAllProductsPageVisible(), "All Products page is not visible.");
+            // Step 3: Verify 'All Products' page visibility
+            Assert.assertTrue(productsPage.isAllProductsPageVisible(), "'All Products' page is not visible.");
+            log.info("Step 3 passed: 'All Products' page is visible.");
 
-        // Step 6: Verify products list
-        Log.info("Verifying products list visibility.");
-        Assert.assertTrue(productsPage.isProductsListVisible(), "Products list is not visible.");
+            // Step 4: Verify products list visibility
+            Assert.assertTrue(productsPage.isProductsListVisible(), "Products list is not visible.");
+            log.info("Step 4 passed: Products list is visible.");
 
-        // Step 7: Click on 'View Product' of first product
-        Log.info("Clicking on 'View Product' of first product.");
-        productsPage.clickFirstViewProduct();
+            // Step 5: Click on 'View Product' link of first product
+            productsPage.clickFirstViewProduct();
+            log.info("Step 5 passed: Clicked on 'View Product' of first product.");
 
-        // Step 8-9: Verify product detail page and details
-        Log.info("Verifying product details are visible.");
-        Assert.assertTrue(productsPage.isProductNameVisible(), "Product name is not visible.");
-        Assert.assertTrue(productsPage.isProductCategoryVisible(), "Product category is not visible.");
-        Assert.assertTrue(productsPage.isProductPriceVisible(), "Product price is not visible.");
-        Assert.assertTrue(productsPage.isProductAvailabilityVisible(), "Product availability is not visible.");
-        Assert.assertTrue(productsPage.isProductConditionVisible(), "Product condition is not visible.");
-        Assert.assertTrue(productsPage.isProductBrandVisible(), "Product brand is not visible.");
+            // Step 6: Verify product details visibility
+            Assert.assertTrue(productsPage.isProductNameVisible(), "Product name is not visible.");
+            Assert.assertTrue(productsPage.isProductCategoryVisible(), "Product category is not visible.");
+            Assert.assertTrue(productsPage.isProductPriceVisible(), "Product price is not visible.");
+            Assert.assertTrue(productsPage.isProductAvailabilityVisible(), "Product availability is not visible.");
+            Assert.assertTrue(productsPage.isProductConditionVisible(), "Product condition is not visible.");
+            Assert.assertTrue(productsPage.isProductBrandVisible(), "Product brand is not visible.");
+            log.info("Step 6 passed: All product details are visible.");
 
-        Log.endTestCase("verifyAllProductsAndProductDetailPage");
+            log.info("===== Test Passed: verifyAllProductsAndProductDetailPage =====");
+
+        } catch (Exception e) {
+            log.error("Test execution failed.", e);
+            Assert.fail("Test failed due to unexpected error: " + e.getMessage());
+        }
     }
 }

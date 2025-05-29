@@ -2,15 +2,24 @@ package com.ecommerce.pageobjects;
 
 import com.ecommerce.actiondriver.Action;
 import com.ecommerce.base.BaseClass;
+import com.ecommerce.utility.Log;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.List;
 
+/**
+ * Page Object class for Products Page and Product Details Page.
+ */
 public class ProductsPage extends BaseClass {
 
-    Action action = new Action();
+    private static final Logger log = LogManager.getLogger(ProductsPage.class);
+    private final Action action = new Action();
 
+    // WebElements
     @FindBy(xpath = "//img[@alt='Website for automation practice']")
     private WebElement homePageLogo;
 
@@ -44,57 +53,152 @@ public class ProductsPage extends BaseClass {
     @FindBy(xpath = "//div[@class='product-information']//b[contains(text(),'Brand')]")
     private WebElement productBrand;
 
+    /**
+     * Constructor to initialize web elements.
+     */
     public ProductsPage() {
         PageFactory.initElements(getDriver(), this);
     }
 
+    /**
+     * Verify if home page logo is displayed.
+     */
     public boolean isHomePageVisible() {
-        return action.isDisplayed(getDriver(), homePageLogo);
+        try {
+            log.info("Checking if home page logo is displayed...");
+            return action.isDisplayed(getDriver(), homePageLogo);
+        } catch (Exception e) {
+            log.error("Exception in isHomePageVisible: ", e);
+            return false;
+        }
     }
 
+    /**
+     * Click on 'Products' button to navigate to the products page.
+     */
     public void clickOnProductsButton() {
-        action.click(getDriver(), productsButton);
+        try {
+            log.info("Clicking on 'Products' button...");
+            action.click(getDriver(), productsButton);
+        } catch (Exception e) {
+            log.error("Exception in clickOnProductsButton: ", e);
+        }
     }
 
+    /**
+     * Verify if 'All Products' page title is displayed.
+     */
     public boolean isAllProductsPageVisible() {
-        return action.isDisplayed(getDriver(), allProductsTitle);
+        try {
+            log.info("Checking if 'All Products' title is visible...");
+            return action.isDisplayed(getDriver(), allProductsTitle);
+        } catch (Exception e) {
+            log.error("Exception in isAllProductsPageVisible: ", e);
+            return false;
+        }
     }
 
+    /**
+     * Verify if the list of products is displayed.
+     */
     public boolean isProductsListVisible() {
-        return productsList.size() > 0;
+        try {
+            log.info("Checking if product list is displayed...");
+            return productsList != null && !productsList.isEmpty();
+        } catch (Exception e) {
+            log.error("Exception in isProductsListVisible: ", e);
+            return false;
+        }
     }
 
-//    public void clickOnFirstViewProduct() {
-//        action.click(getDriver(), firstViewProductLink);
-//    }
-    
+    /**
+     * Click on 'View Product' link of the first listed product.
+     */
     public void clickFirstViewProduct() {
-        action.scrollIntoView(getDriver(), firstViewProductLink);
-        action.click(getDriver(), firstViewProductLink);
+        try {
+            log.info("Clicking on first 'View Product' link...");
+            action.scrollIntoView(getDriver(), firstViewProductLink);
+            action.click(getDriver(), firstViewProductLink);
+        } catch (Exception e) {
+            log.error("Exception in clickFirstViewProduct: ", e);
+        }
     }
 
-
+    /**
+     * Verify if product name is displayed on the product detail page.
+     */
     public boolean isProductNameVisible() {
-        return action.isDisplayed(getDriver(), productName);
+        try {
+            log.info("Checking if product name is visible...");
+            return action.isDisplayed(getDriver(), productName);
+        } catch (Exception e) {
+            log.error("Exception in isProductNameVisible: ", e);
+            return false;
+        }
     }
 
+    /**
+     * Verify if product category is displayed on the product detail page.
+     */
     public boolean isProductCategoryVisible() {
-        return action.isDisplayed(getDriver(), productCategory);
+        try {
+            log.info("Checking if product category is visible...");
+            return action.isDisplayed(getDriver(), productCategory);
+        } catch (Exception e) {
+            log.error("Exception in isProductCategoryVisible: ", e);
+            return false;
+        }
     }
 
+    /**
+     * Verify if product price is displayed on the product detail page.
+     */
     public boolean isProductPriceVisible() {
-        return action.isDisplayed(getDriver(), productPrice);
+        try {
+            log.info("Checking if product price is visible...");
+            return action.isDisplayed(getDriver(), productPrice);
+        } catch (Exception e) {
+            log.error("Exception in isProductPriceVisible: ", e);
+            return false;
+        }
     }
 
+    /**
+     * Verify if product availability is displayed on the product detail page.
+     */
     public boolean isProductAvailabilityVisible() {
-        return action.isDisplayed(getDriver(), productAvailability);
+        try {
+            log.info("Checking if product availability is visible...");
+            return action.isDisplayed(getDriver(), productAvailability);
+        } catch (Exception e) {
+            log.error("Exception in isProductAvailabilityVisible: ", e);
+            return false;
+        }
     }
 
+    /**
+     * Verify if product condition is displayed on the product detail page.
+     */
     public boolean isProductConditionVisible() {
-        return action.isDisplayed(getDriver(), productCondition);
+        try {
+            log.info("Checking if product condition is visible...");
+            return action.isDisplayed(getDriver(), productCondition);
+        } catch (Exception e) {
+            log.error("Exception in isProductConditionVisible: ", e);
+            return false;
+        }
     }
 
+    /**
+     * Verify if product brand is displayed on the product detail page.
+     */
     public boolean isProductBrandVisible() {
-        return action.isDisplayed(getDriver(), productBrand);
+        try {
+            log.info("Checking if product brand is visible...");
+            return action.isDisplayed(getDriver(), productBrand);
+        } catch (Exception e) {
+            log.error("Exception in isProductBrandVisible: ", e);
+            return false;
+        }
     }
 }

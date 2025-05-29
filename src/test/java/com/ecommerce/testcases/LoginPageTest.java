@@ -2,45 +2,65 @@ package com.ecommerce.testcases;
 
 import com.ecommerce.base.BaseClass;
 import com.ecommerce.pageobjects.LoginPage;
-import com.ecommerce.utility.Log;
 import org.testng.annotations.Test;
 import org.testng.Assert;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+/**
+ * Test Case: Verify valid user login.
+ * Steps:
+ * 1. Verify homepage is visible
+ * 2. Navigate to login page
+ * 3. Verify login form is visible
+ * 4. Enter valid credentials and login
+ * 5. Verify login is successful with username display
+ */
 
 public class LoginPageTest extends BaseClass {
 
-    LoginPage loginPage;
+    private static final Logger log = LogManager.getLogger(LoginPageTest.class);
+    private LoginPage loginPage;
 
-    @Test
+    @Test(groups = {"Smoke", "Regression"})
     public void verifyLogin() {
-        Log.startTestCase("verifyLogin");
+        log.info("===== Starting Test: verifyLogin =====");
 
-        loginPage = new LoginPage();
-        Log.info("LoginPage object initialized.");
+        try {
+            loginPage = new LoginPage();
+            log.debug("LoginPage object instantiated.");
 
-        // Step 3: Verify home page
-        Log.info("Verifying home page visibility.");
-        Assert.assertTrue(loginPage.isHomePageVisible(), "Home page is not visible.");
+            // Step 1: Check homepage visibility
+            Assert.assertTrue(loginPage.isHomePageVisible(), "Home page is not visible.");
+            log.info("Step 1 passed: Homepage is visible.");
 
-        // Step 4-5: Navigate to login and verify login title
-        Log.info("Navigating to login page.");
-        loginPage.goToLoginPage();
+            // Step 2: Navigate to login page
+            loginPage.goToLoginPage();
+            log.info("Step 2 passed: Navigated to login page.");
 
-        Log.info("Checking login title visibility.");
-        Assert.assertTrue(loginPage.isLoginTitleVisible(), "'Login to your account' is not visible.");
+            // Step 3: Verify login form visibility
+            Assert.assertTrue(loginPage.isLoginTitleVisible(), "'Login to your account' title not visible.");
+            log.info("Step 3 passed: Login form title is visible.");
 
-        // Step 6-7: Perform login
-        Log.info("Entering email and password.");
-        loginPage.doLogin(prop.getProperty("email"), prop.getProperty("password"));
+            // Step 4: Perform login
+            String email = prop.getProperty("email");
+            String password = prop.getProperty("password");
+            log.debug("Using email: " + email + " and password: [HIDDEN]");
+            loginPage.doLogin(email, password);
+            log.info("Step 4 passed: Login attempted with valid credentials.");
 
-        // Step 8: Verify successful login using dynamic username
-        String actualUsername = loginPage.getLoggedInUsername();
-        String expectedUsername = prop.getProperty("name");
+            // Step 5: Verify username after login
+            String actualUsername = loginPage.getLoggedInUsername();
+            String expectedUsername = prop.getProperty("name");
+            log.debug("Expected username: " + expectedUsername + ", Actual: " + actualUsername);
+            Assert.assertEquals(actualUsername, expectedUsername, "Logged-in username mismatch.");
+            log.info("Step 5 passed: Logged-in username verified successfully.");
 
-        Log.info("Verifying logged in username. Expected: " + expectedUsername + ", Actual: " + actualUsername);
-        Assert.assertEquals(actualUsername, expectedUsername, "Logged-in username mismatch.");
+            log.info("===== Test Passed: verifyLogin =====");
 
-        Log.endTestCase("verifyLogin");
+        } catch (Exception e) {
+            log.error("Test execution failed.", e);
+            Assert.fail("Test failed due to unexpected error: " + e.getMessage());
+        }
     }
 }
-
-

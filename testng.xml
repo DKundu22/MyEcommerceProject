@@ -11,9 +11,9 @@
             <class name="com.ecommerce.testcases.LoginPageTest"/>
             <class name="com.ecommerce.testcases.RegisterUserTest"/>
             <class name="com.ecommerce.testcases.ProductsPageTest"/>
+            <class name="com.ecommerce.testcases.SearchProductTest"/>
         </classes>
     </test>
-    
     
 
     <!-- Test for Firefox -->
@@ -22,6 +22,7 @@
         <classes>
             <class name="com.ecommerce.testcases.LoginPageTest"/>
             <class name="com.ecommerce.testcases.ProductsPageTest"/>
+            <class name="com.ecommerce.testcases.SearchProductTest"/>
         </classes>
     </test>
 
@@ -31,6 +32,7 @@
         <classes>
             <class name="com.ecommerce.testcases.LoginPageTest"/>
             <class name="com.ecommerce.testcases.ProductsPageTest"/>
+            <class name="com.ecommerce.testcases.SearchProductTest"/>
         </classes>
     </test>
 
@@ -40,8 +42,6 @@
             <class name="com.ecommerce.testcases.LoginPageTest"/>
         </classes>
     </test>  -->
-
-
 </suite>
 
 

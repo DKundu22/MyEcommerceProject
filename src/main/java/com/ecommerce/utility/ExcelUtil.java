@@ -2,20 +2,16 @@ package com.ecommerce.utility;
 
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
-//import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.*;
 
 public class ExcelUtil {
-
     public static List<Map<String, String>> getTestData(String sheetName) {
         List<Map<String, String>> testData = new ArrayList<>();
-        try (
-            InputStream is = Thread.currentThread().getContextClassLoader()
-                                    .getResourceAsStream("TestData/UserRegistrationData.xlsx");
-            Workbook workbook = new XSSFWorkbook(is)
-        ) {
+        try (InputStream is = Thread.currentThread().getContextClassLoader()
+                .getResourceAsStream("TestData/UserRegistrationData.xlsx");
+             Workbook workbook = new XSSFWorkbook(is)) {
+
             Sheet sheet = workbook.getSheet(sheetName);
             Row headerRow = sheet.getRow(0);
             int rowCount = sheet.getPhysicalNumberOfRows();
@@ -31,8 +27,9 @@ public class ExcelUtil {
                 }
                 testData.add(dataMap);
             }
+            Log.info("Loaded sheet: " + sheetName + ", Rows: " + rowCount);
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.error("Failed to read Excel test data", e);
         }
         return testData;
     }

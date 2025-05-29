@@ -20,13 +20,14 @@ import java.util.Properties;
 public class BaseClass {
 
     public static Properties prop;
+    // Thread-safe storage for WebDriver and browser name
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     private static ThreadLocal<String> browserName = new ThreadLocal<>();
 
     /**
      * Loads configuration before the test suite starts.
      */
-    @BeforeSuite
+    @BeforeSuite(alwaysRun = true) 
     public void beforeSuite() {
         loadConfig();
         Log.startTestSuite("Automation Test Suite Started");
@@ -37,23 +38,34 @@ public class BaseClass {
      * @param browser Browser name (Chrome/Firefox/Edge/Safari)
      */
     @Parameters("browser")
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true) 
     public void setUp(@Optional("Chrome") String browser) {
-        launchApp(browser);
+    	 try {
+    	        launchApp(browser);
+    	    } catch (Exception e) {
+    	        Log.error("Error during setup (possibly missing browser parameter or browser driver issue):", e);
+    	        throw e; // Let TestNG know this config failed
+    	    }
     }
 
     /**
      * Closes the browser after each test method and captures screenshot if test failed.
      */
-    @AfterMethod
+    @AfterMethod(alwaysRun = true) 
     public void tearDown(ITestResult result) {
         if (result.getStatus() == ITestResult.FAILURE) {
             Log.error("Test Failed: " + result.getName());
-            ScreenShot.captureScreenShot(getDriver(), result.getName());
+            
+            if (getDriver() != null) {
+                ScreenShot.captureScreenShot(getDriver(), result.getName());
+            } else {
+                Log.warn("WebDriver is null. Skipping screenshot for: " + result.getName());
+            }
+            
         }
         Log.info("Closing browser...");
         if (getDriver() != null) {
-            getDriver().quit();
+            getDriver().quit();getDriver();
             driver.remove();
             browserName.remove();
         }
@@ -62,7 +74,7 @@ public class BaseClass {
     /**
      * Ends the test suite.
      */
-    @AfterSuite
+    @AfterSuite(alwaysRun = true) 
     public void afterSuite() {
         Log.endTestSuite("Automation Test Suite Finished");
     }
@@ -112,7 +124,8 @@ public class BaseClass {
                 Log.error("Unsupported browser: " + browser);
                 throw new RuntimeException("Browser not supported: " + browser);
         }
-
+        
+        // Browser setup
         getDriver().manage().window().maximize();
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         getDriver().get(prop.getProperty("url"));
@@ -122,6 +135,7 @@ public class BaseClass {
     /**
      * Returns the current thread-safe WebDriver instance.
      * @return WebDriver instance
+     * Getter for WebDriver instance
      */
     public static WebDriver getDriver() {
         return driver.get();
@@ -130,6 +144,7 @@ public class BaseClass {
     /**
      * Returns a WebDriverWait instance for explicit waits.
      * @return WebDriverWait instance
+     * Getter for WebDriverWait
      */
     public static WebDriverWait getWait() {
         return new WebDriverWait(getDriver(), Duration.ofSeconds(20));
@@ -138,6 +153,7 @@ public class BaseClass {
     /**
      * Returns the browser name for current thread.
      * @return Browser name
+     * Getter for browser Name
      */
     public static String getBrowserName() {
         return browserName.get();

@@ -2,19 +2,26 @@ package com.ecommerce.pageobjects;
 
 import com.ecommerce.actiondriver.Action;
 import com.ecommerce.base.BaseClass;
-
-import java.time.Duration;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
+/**
+ * Page Object class representing the Login Page.
+ * Handles interactions and logs steps with appropriate log levels.
+ */
 public class LoginPage extends BaseClass {
 
-    Action action = new Action();
+    private static final Logger log = LogManager.getLogger(LoginPage.class);
+    private final Action action = new Action();
 
+    // Page elements
     @FindBy(xpath = "//img[@alt='Website for automation practice']")
     private WebElement homePageLogo;
 
@@ -36,43 +43,93 @@ public class LoginPage extends BaseClass {
     @FindBy(xpath = "//a[contains(text(),'Logged in as')]")
     private WebElement loggedInText;
 
+    // Constructor to initialize WebElements
     public LoginPage() {
         PageFactory.initElements(getDriver(), this);
     }
 
+    /**
+     * Verifies that the homepage logo is visible.
+     */
     public boolean isHomePageVisible() {
-        return action.isDisplayed(getDriver(), homePageLogo);
-    }
-
-    public void goToLoginPage() {
-        action.click(getDriver(), signupLoginLink);
-    }
-
-//    public boolean isLoginTitleVisible() {
-//        return action.isDisplayed(getDriver(), loginTitle);
-//    }
-
-    public boolean isLoginTitleVisible() {
-        // Explicit wait to ensure the title is visible
-        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(20));
         try {
-            wait.until(ExpectedConditions.visibilityOf(loginTitle));
-            return true; // The title is visible
+            boolean displayed = action.isDisplayed(getDriver(), homePageLogo);
+            log.info("Homepage logo visibility check passed.");
+            log.debug("Logo displayed: " + displayed);
+            return displayed;
         } catch (Exception e) {
-            return false; // Title not visible within the wait time
+            log.error("Home page logo is not visible.", e);
+            return false;
         }
     }
-    
+
+    /**
+     * Clicks the 'Signup/Login' link.
+     */
+    public void goToLoginPage() {
+        try {
+            action.click(getDriver(), signupLoginLink);
+            log.info("Clicked on Signup/Login link.");
+        } catch (Exception e) {
+            log.error("Unable to click on Signup/Login link.", e);
+            throw e;
+        }
+    }
+
+    /**
+     * Waits for and verifies that the login form title is visible.
+     */
+    public boolean isLoginTitleVisible() {
+        try {
+            WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(20));
+            wait.until(ExpectedConditions.visibilityOf(loginTitle));
+            log.info("Login form title is visible.");
+            return true;
+        } catch (Exception e) {
+            log.error("Login form title not visible.", e);
+            return false;
+        }
+    }
+
+    /**
+     * Performs login with given credentials.
+     *
+     * @param email    the user's email
+     * @param password the user's password
+     */
     public void doLogin(String email, String password) {
-        action.type(emailInput, email);
-        action.type(passwordInput, password);
-        action.click(getDriver(), loginBtn);
+        try {
+            log.debug("Attempting to enter email: " + email);
+            action.type(emailInput, email);
+
+            log.debug("Attempting to enter password.");
+            action.type(passwordInput, password);
+
+            log.info("Clicking Login button.");
+            action.click(getDriver(), loginBtn);
+
+            log.info("Login submitted successfully.");
+        } catch (Exception e) {
+            log.error("Login action failed.", e);
+            throw e;
+        }
     }
 
+    /**
+     * Retrieves the logged-in user's name after successful login.
+     *
+     * @return the username or null if retrieval fails
+     */
     public String getLoggedInUsername() {
-        String actualText = loggedInText.getText(); // "Logged in as Dinesh Paul"
-        return actualText.replace("Logged in as ", "").trim();
+        try {
+            String actualText = loggedInText.getText(); // e.g., "Logged in as John"
+            String username = actualText.replace("Logged in as ", "").trim();
+            log.info("Retrieved logged-in username.");
+            log.debug("Username extracted: " + username);
+            return username;
+        } catch (Exception e) {
+            log.error("Unable to fetch logged-in username.", e);
+            return null;
+        }
     }
-
 }
-
