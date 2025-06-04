@@ -15,6 +15,7 @@
             <class name="com.ecommerce.testcases.LoginPageTest"/>
             <class name="com.ecommerce.testcases.ProductsPageTest"/>
             <class name="com.ecommerce.testcases.SearchProductTest"/>
+            <class name="com.ecommerce.testcases.addMultipleProductsToCartTest"/>
         </classes>
     </test>
 </suite>

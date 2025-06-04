@@ -7,9 +7,9 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="verifyProductQuantityInCartTest"/>
           <include name="afterSuite"/>
           <include name="beforeSuite"/>
-          <include name="testVerifyProductQuantityInCart"/>
         </methods>
       </class> <!-- com.ecommerce.testcases.CartTest -->
     </classes>

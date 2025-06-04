@@ -1,0 +1,47 @@
+2025-06-04 08:59:05 [main] INFO  com.ecommerce.utility.Log - Loading configuration properties...
+2025-06-04 08:59:05 [main] INFO  com.ecommerce.utility.Log - Loaded configuration properties.
+2025-06-04 08:59:05 [main] INFO  com.ecommerce.utility.Log - === START SUITE === Automation Test Suite Started
+2025-06-04 08:59:05 [main] INFO  com.ecommerce.utility.Log - Launching browser: Chrome
+2025-06-04 08:59:12 [main] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-06-04 08:59:12 [main] INFO  com.ecommerce.testcases.SearchProductTest - ===== Starting Test: searchMultipleProductsTest =====
+2025-06-04 08:59:12 [main] DEBUG com.ecommerce.testcases.SearchProductTest - Page title: Automation Exercise
+2025-06-04 08:59:12 [main] INFO  com.ecommerce.testcases.SearchProductTest - Step 1 passed: Home page loaded successfully.
+2025-06-04 08:59:12 [main] DEBUG com.ecommerce.testcases.SearchProductTest - SearchProductsPage object instantiated.
+2025-06-04 08:59:16 [main] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (41e1a4bc5925515ebd0897996d4693a5)] -> xpath: //a[@href='/products']]
+2025-06-04 08:59:16 [main] INFO  com.ecommerce.pageobjects.SearchProductsPage - Clicked on Products button.
+2025-06-04 08:59:16 [main] INFO  com.ecommerce.testcases.SearchProductTest - Clicked on Products button.
+2025-06-04 08:59:16 [main] DEBUG com.ecommerce.testcases.SearchProductTest - Current URL: https://www.automationexercise.com/products
+2025-06-04 08:59:16 [main] INFO  com.ecommerce.testcases.SearchProductTest - Step 2 passed: Navigated to Products page successfully.
+2025-06-04 08:59:16 [main] INFO  com.ecommerce.testcases.SearchProductTest - Searching for product: Top
+2025-06-04 08:59:16 [main] INFO  com.ecommerce.utility.Log - Typed text: Top
+2025-06-04 08:59:16 [main] INFO  com.ecommerce.pageobjects.SearchProductsPage - Entered product name in search input: Top
+2025-06-04 08:59:19 [main] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (41e1a4bc5925515ebd0897996d4693a5)] -> id: submit_search]
+2025-06-04 08:59:19 [main] INFO  com.ecommerce.pageobjects.SearchProductsPage - Clicked on Search button.
+2025-06-04 08:59:19 [main] INFO  com.ecommerce.pageobjects.SearchProductsPage - 'Searched Products' title visibility: true
+2025-06-04 08:59:19 [main] INFO  com.ecommerce.testcases.SearchProductTest - 'SEARCHED PRODUCTS' title is visible.
+2025-06-04 08:59:19 [main] INFO  com.ecommerce.pageobjects.SearchProductsPage - Retrieved list of searched products. Count: 15
+2025-06-04 08:59:19 [main] DEBUG com.ecommerce.testcases.SearchProductTest - Number of search results for Top: 15
+2025-06-04 08:59:19 [main] INFO  com.ecommerce.testcases.SearchProductTest - Search results verified for product: Top
+2025-06-04 08:59:19 [main] INFO  com.ecommerce.testcases.SearchProductTest - Searching for product: T-shirt
+2025-06-04 08:59:19 [main] INFO  com.ecommerce.utility.Log - Typed text: T-shirt
+2025-06-04 08:59:19 [main] INFO  com.ecommerce.pageobjects.SearchProductsPage - Entered product name in search input: T-shirt
+2025-06-04 08:59:21 [main] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (41e1a4bc5925515ebd0897996d4693a5)] -> id: submit_search]
+2025-06-04 08:59:21 [main] INFO  com.ecommerce.pageobjects.SearchProductsPage - Clicked on Search button.
+2025-06-04 08:59:21 [main] INFO  com.ecommerce.pageobjects.SearchProductsPage - 'Searched Products' title visibility: true
+2025-06-04 08:59:21 [main] INFO  com.ecommerce.testcases.SearchProductTest - 'SEARCHED PRODUCTS' title is visible.
+2025-06-04 08:59:21 [main] INFO  com.ecommerce.pageobjects.SearchProductsPage - Retrieved list of searched products. Count: 4
+2025-06-04 08:59:21 [main] DEBUG com.ecommerce.testcases.SearchProductTest - Number of search results for T-shirt: 4
+2025-06-04 08:59:21 [main] INFO  com.ecommerce.testcases.SearchProductTest - Search results verified for product: T-shirt
+2025-06-04 08:59:21 [main] INFO  com.ecommerce.testcases.SearchProductTest - Searching for product: Jeans
+2025-06-04 08:59:21 [main] INFO  com.ecommerce.utility.Log - Typed text: Jeans
+2025-06-04 08:59:21 [main] INFO  com.ecommerce.pageobjects.SearchProductsPage - Entered product name in search input: Jeans
+2025-06-04 08:59:24 [main] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (41e1a4bc5925515ebd0897996d4693a5)] -> id: submit_search]
+2025-06-04 08:59:24 [main] INFO  com.ecommerce.pageobjects.SearchProductsPage - Clicked on Search button.
+2025-06-04 08:59:24 [main] INFO  com.ecommerce.pageobjects.SearchProductsPage - 'Searched Products' title visibility: true
+2025-06-04 08:59:24 [main] INFO  com.ecommerce.testcases.SearchProductTest - 'SEARCHED PRODUCTS' title is visible.
+2025-06-04 08:59:24 [main] INFO  com.ecommerce.pageobjects.SearchProductsPage - Retrieved list of searched products. Count: 4
+2025-06-04 08:59:24 [main] DEBUG com.ecommerce.testcases.SearchProductTest - Number of search results for Jeans: 4
+2025-06-04 08:59:24 [main] INFO  com.ecommerce.testcases.SearchProductTest - Search results verified for product: Jeans
+2025-06-04 08:59:24 [main] INFO  com.ecommerce.testcases.SearchProductTest - ===== Test Passed: searchMultipleProductsTest =====
+2025-06-04 08:59:24 [main] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-06-04 08:59:25 [main] INFO  com.ecommerce.utility.Log - === END SUITE === Automation Test Suite Finished

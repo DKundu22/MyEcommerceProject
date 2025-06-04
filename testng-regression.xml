@@ -16,6 +16,7 @@
             <class name="com.ecommerce.testcases.RegisterUserTest"/>
             <class name="com.ecommerce.testcases.ProductsPageTest"/>
             <class name="com.ecommerce.testcases.SearchProductTest"/>
+            <class name="com.ecommerce.testcases.CartTest"/>
         </classes>
     </test>
 </suite>
