@@ -1,0 +1,506 @@
+2025-07-27 00:41:14 [main] INFO  com.ecommerce.utility.Log - Loading configuration properties...
+2025-07-27 00:41:14 [main] INFO  com.ecommerce.utility.Log - Loaded configuration properties.
+2025-07-27 00:41:14 [main] INFO  com.ecommerce.utility.Log - === START SUITE === Automation Test Suite Started
+2025-07-27 00:41:14 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Launching browser: chrome
+2025-07-27 00:41:33 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-07-27 00:41:33 [TestNG-tests-1] INFO  com.ecommerce.testcases.LoginPageTest - ===== Starting Test: verifyInvalidLogin =====
+2025-07-27 00:41:37 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (beaaf9058c1c1e660bb3e5617df080a1)] -> xpath: //a[contains(text(),'Signup / Login')]]
+2025-07-27 00:41:37 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.LoginPage - Clicked on Signup/Login link.
+2025-07-27 00:41:37 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.LoginPage - Login form title is visible.
+2025-07-27 00:41:37 [TestNG-tests-1] DEBUG com.ecommerce.pageobjects.LoginPage - Attempting to enter email: invalid@example.com
+2025-07-27 00:41:37 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Typed text: invalid@example.com
+2025-07-27 00:41:37 [TestNG-tests-1] DEBUG com.ecommerce.pageobjects.LoginPage - Attempting to enter password.
+2025-07-27 00:41:37 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Typed text: wrongpassword
+2025-07-27 00:41:37 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.LoginPage - Clicking Login button.
+2025-07-27 00:41:40 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (beaaf9058c1c1e660bb3e5617df080a1)] -> xpath: //button[@data-qa='login-button']]
+2025-07-27 00:41:40 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.LoginPage - Login submitted successfully.
+2025-07-27 00:41:40 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.LoginPage - Login error message displayed: Your email or password is incorrect!
+2025-07-27 00:41:40 [TestNG-tests-1] INFO  com.ecommerce.testcases.LoginPageTest - Invalid login error message verified for email: invalid@example.com
+2025-07-27 00:41:42 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (beaaf9058c1c1e660bb3e5617df080a1)] -> xpath: //a[contains(text(),'Signup / Login')]]
+2025-07-27 00:41:42 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.LoginPage - Clicked on Signup/Login link.
+2025-07-27 00:41:42 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.LoginPage - Login form title is visible.
+2025-07-27 00:41:42 [TestNG-tests-1] DEBUG com.ecommerce.pageobjects.LoginPage - Attempting to enter email: Dpaul01@yopmail.com
+2025-07-27 00:41:42 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Typed text: Dpaul01@yopmail.com
+2025-07-27 00:41:42 [TestNG-tests-1] DEBUG com.ecommerce.pageobjects.LoginPage - Attempting to enter password.
+2025-07-27 00:41:42 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Typed text: wrongpassword
+2025-07-27 00:41:42 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.LoginPage - Clicking Login button.
+2025-07-27 00:41:45 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (beaaf9058c1c1e660bb3e5617df080a1)] -> xpath: //button[@data-qa='login-button']]
+2025-07-27 00:41:45 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.LoginPage - Login submitted successfully.
+2025-07-27 00:41:45 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.LoginPage - Login error message displayed: Your email or password is incorrect!
+2025-07-27 00:41:45 [TestNG-tests-1] INFO  com.ecommerce.testcases.LoginPageTest - Invalid login error message verified for email: Dpaul01@yopmail.com
+2025-07-27 00:41:45 [TestNG-tests-1] INFO  com.ecommerce.testcases.LoginPageTest - ===== Test Passed: verifyInvalidLogin =====
+2025-07-27 00:41:45 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-07-27 00:41:45 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Launching browser: chrome
+2025-07-27 00:42:19 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-07-27 00:42:20 [TestNG-tests-1] INFO  com.ecommerce.testcases.LoginPageTest - ===== Starting Test: verifyLogin =====
+2025-07-27 00:42:20 [TestNG-tests-1] DEBUG com.ecommerce.testcases.LoginPageTest - Using email: Dpaul01@yopmail.com and password: [HIDDEN]
+2025-07-27 00:42:20 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.LoginPage - Homepage logo visibility check passed.
+2025-07-27 00:42:20 [TestNG-tests-1] DEBUG com.ecommerce.pageobjects.LoginPage - Logo displayed: true
+2025-07-27 00:42:20 [TestNG-tests-1] INFO  com.ecommerce.testcases.LoginPageTest - Step 1 passed: Homepage is visible.
+2025-07-27 00:43:37 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (1387b2d20e06b643eec39924e328407c)] -> xpath: //a[contains(text(),'Signup / Login')]]
+2025-07-27 00:43:37 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.LoginPage - Clicked on Signup/Login link.
+2025-07-27 00:43:37 [TestNG-tests-1] INFO  com.ecommerce.testcases.LoginPageTest - Step 2 passed: Navigated to login page.
+2025-07-27 00:43:37 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.LoginPage - Login form title is visible.
+2025-07-27 00:43:37 [TestNG-tests-1] INFO  com.ecommerce.testcases.LoginPageTest - Step 3 passed: Login form title is visible.
+2025-07-27 00:43:37 [TestNG-tests-1] DEBUG com.ecommerce.pageobjects.LoginPage - Attempting to enter email: Dpaul01@yopmail.com
+2025-07-27 00:43:38 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Typed text: Dpaul01@yopmail.com
+2025-07-27 00:43:38 [TestNG-tests-1] DEBUG com.ecommerce.pageobjects.LoginPage - Attempting to enter password.
+2025-07-27 00:43:38 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Typed text: Test01@$
+2025-07-27 00:43:38 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.LoginPage - Clicking Login button.
+2025-07-27 00:43:52 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: Proxy element for: DefaultElementLocator 'By.xpath: //button[@data-qa='login-button']'
+2025-07-27 00:43:52 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.LoginPage - Login submitted successfully.
+2025-07-27 00:43:52 [TestNG-tests-1] INFO  com.ecommerce.testcases.LoginPageTest - Step 4 passed: Login attempted with valid credentials.
+2025-07-27 00:43:52 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.LoginPage - Retrieved logged-in username.
+2025-07-27 00:43:52 [TestNG-tests-1] DEBUG com.ecommerce.pageobjects.LoginPage - Username extracted: Dinesh Paul
+2025-07-27 00:43:52 [TestNG-tests-1] DEBUG com.ecommerce.testcases.LoginPageTest - Expected username: Dinesh Paul, Actual: Dinesh Paul
+2025-07-27 00:43:52 [TestNG-tests-1] INFO  com.ecommerce.testcases.LoginPageTest - Step 5 passed: Logged-in username verified successfully.
+2025-07-27 00:43:52 [TestNG-tests-1] INFO  com.ecommerce.testcases.LoginPageTest - ===== Test Passed: verifyLogin =====
+2025-07-27 00:43:52 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-07-27 00:43:53 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Loaded sheet: Sheet1, Rows: 2
+2025-07-27 00:43:53 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Launching browser: chrome
+2025-07-27 00:43:58 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-07-27 00:43:58 [TestNG-tests-1] INFO  com.ecommerce.testcases.RegisterUserTest - ===== Starting Test: registerUser =====
+2025-07-27 00:43:58 [TestNG-tests-1] DEBUG com.ecommerce.testcases.RegisterUserTest - RegisterPage object instantiated.
+2025-07-27 00:45:15 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (266468c6176058b96ee6d8b5fd0b95e3)] -> xpath: //a[contains(text(),'Signup / Login')]]
+2025-07-27 00:45:15 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.RegisterPage - Clicked on Signup/Login link.
+2025-07-27 00:45:15 [TestNG-tests-1] INFO  com.ecommerce.testcases.RegisterUserTest - Step 1 passed: Navigated to Signup/Login page.
+2025-07-27 00:45:15 [TestNG-tests-1] DEBUG com.ecommerce.testcases.RegisterUserTest - Entering name: Jane Roe and email: jane.roe1@test.com
+2025-07-27 00:45:15 [TestNG-tests-1] DEBUG com.ecommerce.pageobjects.RegisterPage - Entering signup name: Jane Roe
+2025-07-27 00:45:15 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Typed text: Jane Roe
+2025-07-27 00:45:15 [TestNG-tests-1] DEBUG com.ecommerce.pageobjects.RegisterPage - Entering signup email: jane.roe1@test.com
+2025-07-27 00:45:15 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Typed text: jane.roe1@test.com
+2025-07-27 00:45:20 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (266468c6176058b96ee6d8b5fd0b95e3)] -> xpath: //button[contains(text(),'Signup')]]
+2025-07-27 00:45:20 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.RegisterPage - Signup details submitted.
+2025-07-27 00:45:20 [TestNG-tests-1] INFO  com.ecommerce.testcases.RegisterUserTest - Step 2 passed: Signup details submitted.
+2025-07-27 00:46:01 [TestNG-tests-1] ERROR com.ecommerce.utility.Log - Element not clickable after timeout
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: id_gender2' (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.19.1.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.19.1.jar:?]
+	at com.ecommerce.actiondriver.Action.waitForElementClickable(Action.java:485) ~[classes/:?]
+	at com.ecommerce.actiondriver.Action.click(Action.java:40) ~[classes/:?]
+	at com.ecommerce.pageobjects.RegisterPage.selectTitle(RegisterPage.java:159) ~[classes/:?]
+	at com.ecommerce.pageobjects.RegisterPage.fillAccountDetails(RegisterPage.java:175) ~[classes/:?]
+	at com.ecommerce.testcases.RegisterUserTest.registerUser(RegisterUserTest.java:60) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64) ~[testng-7.10.2.jar:7.10.2]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:842) [?:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender2"}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [266468c6176058b96ee6d8b5fd0b95e3, findElement {value=id_gender2, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: /var/folders/mx/yg_pnps952g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50638}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50638/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 266468c6176058b96ee6d8b5fd0b95e3
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.19.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.19.1.jar:?]
+	at jdk.proxy2.$Proxy33.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304) ~[selenium-support-4.19.1.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290) ~[selenium-support-4.19.1.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287) ~[selenium-support-4.19.1.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656) ~[selenium-support-4.19.1.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652) ~[selenium-support-4.19.1.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203) ~[selenium-support-4.19.1.jar:?]
+	... 27 more
+2025-07-27 00:46:21 [TestNG-tests-1] ERROR com.ecommerce.utility.Log - Click failed on element: Proxy element for: DefaultElementLocator 'By.id: id_gender2'
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender2"}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [266468c6176058b96ee6d8b5fd0b95e3, findElement {value=id_gender2, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: /var/folders/mx/yg_pnps952g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50638}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50638/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 266468c6176058b96ee6d8b5fd0b95e3
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.19.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.19.1.jar:?]
+	at jdk.proxy2.$Proxy33.click(Unknown Source) ~[?:?]
+	at com.ecommerce.actiondriver.Action.click(Action.java:41) ~[classes/:?]
+	at com.ecommerce.pageobjects.RegisterPage.selectTitle(RegisterPage.java:159) ~[classes/:?]
+	at com.ecommerce.pageobjects.RegisterPage.fillAccountDetails(RegisterPage.java:175) ~[classes/:?]
+	at com.ecommerce.testcases.RegisterUserTest.registerUser(RegisterUserTest.java:60) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64) ~[testng-7.10.2.jar:7.10.2]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:842) [?:?]
+2025-07-27 00:46:21 [TestNG-tests-1] ERROR com.ecommerce.pageobjects.RegisterPage - Failed to select title.
+java.lang.RuntimeException: Failed to click element
+	at com.ecommerce.actiondriver.Action.click(Action.java:45) ~[classes/:?]
+	at com.ecommerce.pageobjects.RegisterPage.selectTitle(RegisterPage.java:159) ~[classes/:?]
+	at com.ecommerce.pageobjects.RegisterPage.fillAccountDetails(RegisterPage.java:175) ~[classes/:?]
+	at com.ecommerce.testcases.RegisterUserTest.registerUser(RegisterUserTest.java:60) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64) ~[testng-7.10.2.jar:7.10.2]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:842) [?:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender2"}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [266468c6176058b96ee6d8b5fd0b95e3, findElement {value=id_gender2, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: /var/folders/mx/yg_pnps952g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50638}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50638/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 266468c6176058b96ee6d8b5fd0b95e3
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.19.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.19.1.jar:?]
+	at jdk.proxy2.$Proxy33.click(Unknown Source) ~[?:?]
+	at com.ecommerce.actiondriver.Action.click(Action.java:41) ~[classes/:?]
+	... 25 more
+2025-07-27 00:46:21 [TestNG-tests-1] ERROR com.ecommerce.pageobjects.RegisterPage - Failed to fill account details.
+java.lang.RuntimeException: Failed to click element
+	at com.ecommerce.actiondriver.Action.click(Action.java:45) ~[classes/:?]
+	at com.ecommerce.pageobjects.RegisterPage.selectTitle(RegisterPage.java:159) ~[classes/:?]
+	at com.ecommerce.pageobjects.RegisterPage.fillAccountDetails(RegisterPage.java:175) ~[classes/:?]
+	at com.ecommerce.testcases.RegisterUserTest.registerUser(RegisterUserTest.java:60) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64) ~[testng-7.10.2.jar:7.10.2]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:842) [?:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender2"}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [266468c6176058b96ee6d8b5fd0b95e3, findElement {value=id_gender2, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: /var/folders/mx/yg_pnps952g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50638}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50638/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 266468c6176058b96ee6d8b5fd0b95e3
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.19.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.19.1.jar:?]
+	at jdk.proxy2.$Proxy33.click(Unknown Source) ~[?:?]
+	at com.ecommerce.actiondriver.Action.click(Action.java:41) ~[classes/:?]
+	... 25 more
+2025-07-27 00:46:21 [TestNG-tests-1] ERROR com.ecommerce.testcases.RegisterUserTest - Test execution failed: 
+java.lang.RuntimeException: Failed to fill account details: Failed to click element
+	at com.ecommerce.pageobjects.RegisterPage.fillAccountDetails(RegisterPage.java:214) ~[classes/:?]
+	at com.ecommerce.testcases.RegisterUserTest.registerUser(RegisterUserTest.java:60) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64) ~[testng-7.10.2.jar:7.10.2]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:842) [?:?]
+Caused by: java.lang.RuntimeException: Failed to click element
+	at com.ecommerce.actiondriver.Action.click(Action.java:45) ~[classes/:?]
+	at com.ecommerce.pageobjects.RegisterPage.selectTitle(RegisterPage.java:159) ~[classes/:?]
+	at com.ecommerce.pageobjects.RegisterPage.fillAccountDetails(RegisterPage.java:175) ~[classes/:?]
+	... 23 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender2"}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [266468c6176058b96ee6d8b5fd0b95e3, findElement {value=id_gender2, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: /var/folders/mx/yg_pnps952g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50638}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50638/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 266468c6176058b96ee6d8b5fd0b95e3
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.19.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.19.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.19.1.jar:?]
+	at jdk.proxy2.$Proxy33.click(Unknown Source) ~[?:?]
+	at com.ecommerce.actiondriver.Action.click(Action.java:41) ~[classes/:?]
+	at com.ecommerce.pageobjects.RegisterPage.selectTitle(RegisterPage.java:159) ~[classes/:?]
+	at com.ecommerce.pageobjects.RegisterPage.fillAccountDetails(RegisterPage.java:175) ~[classes/:?]
+	... 23 more
+2025-07-27 00:46:21 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Screenshot captured: /Users/dkundu/eclipse-workspace/EcommerceProject/Screenshots/registerUser_20250727_004621.png
+2025-07-27 00:46:21 [TestNG-tests-1] ERROR com.ecommerce.utility.Log - Test Failed: registerUser
+2025-07-27 00:46:21 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Screenshot captured: /Users/dkundu/eclipse-workspace/EcommerceProject/Screenshots/registerUser_20250727_004621.png
+2025-07-27 00:46:21 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-07-27 00:46:21 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Launching browser: chrome
+2025-07-27 00:46:26 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-07-27 00:46:26 [TestNG-tests-1] INFO  com.ecommerce.testcases.ProductsPageTest - ===== Starting Test: verifyAllProductsAndProductDetailPage =====
+2025-07-27 00:46:26 [TestNG-tests-1] DEBUG com.ecommerce.testcases.ProductsPageTest - ProductsPage object instantiated.
+2025-07-27 00:46:26 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.ProductsPage - Checking if home page logo is displayed...
+2025-07-27 00:46:26 [TestNG-tests-1] INFO  com.ecommerce.testcases.ProductsPageTest - Step 1 passed: Home page is visible.
+2025-07-27 00:46:26 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.ProductsPage - Clicking on 'Products' button...
+2025-07-27 00:46:29 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (887dead2ecbdc6aaad63b60a9137f424)] -> xpath: //a[@href='/products']]
+2025-07-27 00:46:29 [TestNG-tests-1] INFO  com.ecommerce.testcases.ProductsPageTest - Step 2 passed: Clicked on 'Products' button.
+2025-07-27 00:46:29 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.ProductsPage - Checking if 'All Products' title is visible...
+2025-07-27 00:46:29 [TestNG-tests-1] INFO  com.ecommerce.testcases.ProductsPageTest - Step 3 passed: 'All Products' page is visible.
+2025-07-27 00:46:29 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.ProductsPage - Checking if product list is displayed...
+2025-07-27 00:46:29 [TestNG-tests-1] INFO  com.ecommerce.testcases.ProductsPageTest - Step 4 passed: Products list is visible.
+2025-07-27 00:46:29 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.ProductsPage - Clicking on first 'View Product' link...
+2025-07-27 00:46:29 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Scrolled element into view.
+2025-07-27 00:46:30 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (887dead2ecbdc6aaad63b60a9137f424)] -> xpath: (//a[contains(text(),'View Product')])[1]]
+2025-07-27 00:46:30 [TestNG-tests-1] INFO  com.ecommerce.testcases.ProductsPageTest - Step 5 passed: Clicked on 'View Product' of first product.
+2025-07-27 00:46:30 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.ProductsPage - Checking if product name is visible...
+2025-07-27 00:46:31 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.ProductsPage - Checking if product category is visible...
+2025-07-27 00:46:31 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.ProductsPage - Checking if product price is visible...
+2025-07-27 00:46:32 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.ProductsPage - Checking if product availability is visible...
+2025-07-27 00:46:32 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.ProductsPage - Checking if product condition is visible...
+2025-07-27 00:46:32 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.ProductsPage - Checking if product brand is visible...
+2025-07-27 00:46:32 [TestNG-tests-1] INFO  com.ecommerce.testcases.ProductsPageTest - Step 6 passed: All product details are visible.
+2025-07-27 00:46:32 [TestNG-tests-1] INFO  com.ecommerce.testcases.ProductsPageTest - ===== Test Passed: verifyAllProductsAndProductDetailPage =====
+2025-07-27 00:46:32 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-07-27 00:46:32 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Launching browser: chrome
+2025-07-27 00:46:37 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-07-27 00:46:37 [TestNG-tests-1] INFO  com.ecommerce.testcases.SearchProductTest - ===== Starting Test: searchMultipleProductsTest =====
+2025-07-27 00:46:37 [TestNG-tests-1] DEBUG com.ecommerce.testcases.SearchProductTest - Page title: Automation Exercise
+2025-07-27 00:46:37 [TestNG-tests-1] INFO  com.ecommerce.testcases.SearchProductTest - Step 1 passed: Home page loaded successfully.
+2025-07-27 00:46:37 [TestNG-tests-1] DEBUG com.ecommerce.testcases.SearchProductTest - SearchProductsPage object instantiated.
+2025-07-27 00:46:41 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (2017e1ff225856859c7085ca4e1a1245)] -> xpath: //a[@href='/products']]
+2025-07-27 00:46:41 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.SearchProductsPage - Clicked on Products button.
+2025-07-27 00:46:41 [TestNG-tests-1] INFO  com.ecommerce.testcases.SearchProductTest - Clicked on Products button.
+2025-07-27 00:46:41 [TestNG-tests-1] DEBUG com.ecommerce.testcases.SearchProductTest - Current URL: https://www.automationexercise.com/products
+2025-07-27 00:46:41 [TestNG-tests-1] INFO  com.ecommerce.testcases.SearchProductTest - Step 2 passed: Navigated to Products page successfully.
+2025-07-27 00:46:41 [TestNG-tests-1] INFO  com.ecommerce.testcases.SearchProductTest - Searching for product: Top
+2025-07-27 00:46:42 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Typed text: Top
+2025-07-27 00:46:42 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.SearchProductsPage - Entered product name in search input: Top
+2025-07-27 00:46:45 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (2017e1ff225856859c7085ca4e1a1245)] -> id: submit_search]
+2025-07-27 00:46:45 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.SearchProductsPage - Clicked on Search button.
+2025-07-27 00:46:45 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.SearchProductsPage - 'Searched Products' title visibility: true
+2025-07-27 00:46:45 [TestNG-tests-1] INFO  com.ecommerce.testcases.SearchProductTest - 'SEARCHED PRODUCTS' title is visible.
+2025-07-27 00:46:45 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.SearchProductsPage - Retrieved list of searched products. Count: 15
+2025-07-27 00:46:45 [TestNG-tests-1] DEBUG com.ecommerce.testcases.SearchProductTest - Number of search results for Top: 15
+2025-07-27 00:46:45 [TestNG-tests-1] INFO  com.ecommerce.testcases.SearchProductTest - Search results verified for product: Top
+2025-07-27 00:46:45 [TestNG-tests-1] INFO  com.ecommerce.testcases.SearchProductTest - Searching for product: T-shirt
+2025-07-27 00:46:45 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Typed text: T-shirt
+2025-07-27 00:46:45 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.SearchProductsPage - Entered product name in search input: T-shirt
+2025-07-27 00:46:47 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (2017e1ff225856859c7085ca4e1a1245)] -> id: submit_search]
+2025-07-27 00:46:47 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.SearchProductsPage - Clicked on Search button.
+2025-07-27 00:46:47 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.SearchProductsPage - 'Searched Products' title visibility: true
+2025-07-27 00:46:47 [TestNG-tests-1] INFO  com.ecommerce.testcases.SearchProductTest - 'SEARCHED PRODUCTS' title is visible.
+2025-07-27 00:46:47 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.SearchProductsPage - Retrieved list of searched products. Count: 4
+2025-07-27 00:46:47 [TestNG-tests-1] DEBUG com.ecommerce.testcases.SearchProductTest - Number of search results for T-shirt: 4
+2025-07-27 00:46:47 [TestNG-tests-1] INFO  com.ecommerce.testcases.SearchProductTest - Search results verified for product: T-shirt
+2025-07-27 00:46:47 [TestNG-tests-1] INFO  com.ecommerce.testcases.SearchProductTest - Searching for product: Jeans
+2025-07-27 00:46:47 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Typed text: Jeans
+2025-07-27 00:46:47 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.SearchProductsPage - Entered product name in search input: Jeans
+2025-07-27 00:46:50 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (2017e1ff225856859c7085ca4e1a1245)] -> id: submit_search]
+2025-07-27 00:46:50 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.SearchProductsPage - Clicked on Search button.
+2025-07-27 00:46:50 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.SearchProductsPage - 'Searched Products' title visibility: true
+2025-07-27 00:46:50 [TestNG-tests-1] INFO  com.ecommerce.testcases.SearchProductTest - 'SEARCHED PRODUCTS' title is visible.
+2025-07-27 00:46:50 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.SearchProductsPage - Retrieved list of searched products. Count: 4
+2025-07-27 00:46:50 [TestNG-tests-1] DEBUG com.ecommerce.testcases.SearchProductTest - Number of search results for Jeans: 4
+2025-07-27 00:46:50 [TestNG-tests-1] INFO  com.ecommerce.testcases.SearchProductTest - Search results verified for product: Jeans
+2025-07-27 00:46:50 [TestNG-tests-1] INFO  com.ecommerce.testcases.SearchProductTest - ===== Test Passed: searchMultipleProductsTest =====
+2025-07-27 00:46:50 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-07-27 00:46:50 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Launching browser: chrome
+2025-07-27 00:46:55 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-07-27 00:46:56 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - ===== Starting Test: addMultipleProductsToCartTest =====
+2025-07-27 00:46:56 [TestNG-tests-1] DEBUG com.ecommerce.testcases.CartTest - Page title: Automation Exercise
+2025-07-27 00:46:56 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - Step 1 passed: Home page loaded successfully.
+2025-07-27 00:46:56 [TestNG-tests-1] DEBUG com.ecommerce.testcases.CartTest - AddToCartPage object instantiated.
+2025-07-27 00:46:59 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (e71ea7edaa615631d29cd196db0451e8)] -> xpath: //a[@href='/products']]
+2025-07-27 00:46:59 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.CartPage - Clicked on Products button.
+2025-07-27 00:46:59 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - Clicked on Products button.
+2025-07-27 00:46:59 [TestNG-tests-1] DEBUG com.ecommerce.testcases.CartTest - Current URL: https://www.automationexercise.com/products
+2025-07-27 00:46:59 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - Step 2 passed: Navigated to Products page successfully.
+2025-07-27 00:46:59 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Mouse hovered on element
+2025-07-27 00:46:59 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - JS Clicked element
+2025-07-27 00:46:59 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.CartPage - First product added to cart.
+2025-07-27 00:46:59 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - Step 3 passed: First product added to cart.
+2025-07-27 00:47:00 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (e71ea7edaa615631d29cd196db0451e8)] -> xpath: //button[text()='Continue Shopping']]
+2025-07-27 00:47:00 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.CartPage - Clicked on Continue Shopping button.
+2025-07-27 00:47:00 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - Step 4 passed: Clicked Continue Shopping.
+2025-07-27 00:47:00 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Mouse hovered on element
+2025-07-27 00:47:00 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - JS Clicked element
+2025-07-27 00:47:00 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.CartPage - Second product added to cart.
+2025-07-27 00:47:00 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - Step 5 passed: Second product added to cart.
+2025-07-27 00:47:14 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: Proxy element for: DefaultElementLocator 'By.xpath: //u[text()='View Cart']'
+2025-07-27 00:47:14 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.CartPage - Clicked on View Cart button.
+2025-07-27 00:47:14 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - Step 6 passed: Clicked View Cart.
+2025-07-27 00:47:14 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.CartPage - Retrieved list of cart products. Count: 2
+2025-07-27 00:47:14 [TestNG-tests-1] DEBUG com.ecommerce.testcases.CartTest - Number of products in cart: 2
+2025-07-27 00:47:14 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - Step 7 passed: Verified both products are added to cart.
+2025-07-27 00:47:14 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.CartPage - Retrieved product prices from cart.
+2025-07-27 00:47:14 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.CartPage - Retrieved product quantities from cart.
+2025-07-27 00:47:14 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.CartPage - Retrieved total prices from cart.
+2025-07-27 00:47:14 [TestNG-tests-1] DEBUG com.ecommerce.testcases.CartTest - Product 1: Price = 500, Quantity = 1, Total = 500
+2025-07-27 00:47:15 [TestNG-tests-1] DEBUG com.ecommerce.testcases.CartTest - Product 2: Price = 400, Quantity = 1, Total = 400
+2025-07-27 00:47:15 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - Step 8 passed: Verified prices, quantities, and total prices for all products.
+2025-07-27 00:47:15 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - ===== Test Passed: addMultipleProductsToCartTest =====
+2025-07-27 00:47:15 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-07-27 00:47:15 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Launching browser: chrome
+2025-07-27 00:47:20 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-07-27 00:47:20 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - ===== Starting Test: verifyProductQuantityInCartTest =====
+2025-07-27 00:47:20 [TestNG-tests-1] DEBUG com.ecommerce.testcases.CartTest - Page title: Automation Exercise
+2025-07-27 00:47:20 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - Step 1 passed: Home page loaded successfully.
+2025-07-27 00:47:23 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - JS Clicked element
+2025-07-27 00:47:23 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.CartPage - Clicked on 'View Product' for the first product.
+2025-07-27 00:47:23 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - Step 2 passed: Clicked on View Product.
+2025-07-27 00:47:23 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Typed text: 4
+2025-07-27 00:47:23 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.CartPage - Set product quantity to: 4
+2025-07-27 00:47:23 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - Step 3 passed: Set product quantity to 4.
+2025-07-27 00:47:23 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (e2f0be173819d6a4af119f59b4109392)] -> xpath: //button[normalize-space()='Add to cart']]
+2025-07-27 00:47:23 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.CartPage - Clicked on 'Add to cart' button.
+2025-07-27 00:47:23 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - Step 4 passed: Clicked Add to Cart.
+2025-07-27 00:47:37 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Clicked on element: Proxy element for: DefaultElementLocator 'By.xpath: //u[normalize-space()='View Cart']'
+2025-07-27 00:47:37 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.CartPage - Clicked on 'View Cart' button.
+2025-07-27 00:47:37 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - Step 5 passed: Clicked View Cart.
+2025-07-27 00:47:37 [TestNG-tests-1] INFO  com.ecommerce.pageobjects.CartPage - Retrieved product quantity from cart: 4
+2025-07-27 00:47:37 [TestNG-tests-1] DEBUG com.ecommerce.testcases.CartTest - Actual quantity in cart: 4
+2025-07-27 00:47:37 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - Step 6 passed: Verified product quantity is exactly 4.
+2025-07-27 00:47:37 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - ===== Test Passed: verifyProductQuantityInCartTest =====
+2025-07-27 00:47:37 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-07-27 00:47:37 [main] INFO  com.ecommerce.utility.Log - === END SUITE === Automation Test Suite Finished

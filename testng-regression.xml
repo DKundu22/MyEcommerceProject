@@ -4,8 +4,8 @@
         <listener class-name="com.ecommerce.utility.TestListener"/>
     </listeners>
 
-    <test name="Regression - edge">
-        <parameter name="browser" value="edge"/>
+    <test name="Regression - chrome">
+        <parameter name="browser" value="chrome"/>
         <groups>
             <run>
                 <include name="Regression"/>

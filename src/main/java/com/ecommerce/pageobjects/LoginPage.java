@@ -43,6 +43,9 @@ public class LoginPage extends BaseClass {
     @FindBy(xpath = "//a[contains(text(),'Logged in as')]")
     private WebElement loggedInText;
 
+    @FindBy(xpath = "//p[contains(text(), 'Your email or password is incorrect!')]")
+    private WebElement loginErrorMsg;
+
     // Constructor to initialize WebElements
     public LoginPage() {
         PageFactory.initElements(getDriver(), this);
@@ -129,6 +132,24 @@ public class LoginPage extends BaseClass {
             return username;
         } catch (Exception e) {
             log.error("Unable to fetch logged-in username.", e);
+            return null;
+        }
+    }
+
+      /**
+     * Returns the error message displayed for invalid login.
+     *
+     * @return error message text or null if not displayed
+     */
+    public String getLoginErrorMessage() {
+        try {
+            WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.visibilityOf(loginErrorMsg));
+            String errorMsg = loginErrorMsg.getText();
+            log.info("Login error message displayed: " + errorMsg);
+            return errorMsg;
+        } catch (Exception e) {
+            log.error("Login error message not displayed.", e);
             return null;
         }
     }

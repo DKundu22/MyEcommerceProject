@@ -259,4 +259,3 @@ Caused by: java.util.concurrent.TimeoutException
 2025-07-27 01:06:48 [TestNG-tests-1] INFO  com.ecommerce.testcases.CartTest - ===== Test Passed: verifyProductQuantityInCartTest =====
 2025-07-27 01:06:48 [TestNG-tests-1] INFO  com.ecommerce.utility.Log - Closing browser...
 2025-07-27 01:06:49 [main] INFO  com.ecommerce.utility.Log - === END SUITE === Automation Test Suite Finished
-2025-07-27 01:06:49 [main] INFO  com.ecommerce.utility.Log - Archived log file to: logs/archive/automation-2025-07-27_01-06-49.log

@@ -1,0 +1,96 @@
+2025-07-27 00:18:21 [main] INFO  com.ecommerce.utility.Log - Loading configuration properties...
+2025-07-27 00:18:21 [main] INFO  com.ecommerce.utility.Log - Loaded configuration properties.
+2025-07-27 00:18:21 [main] INFO  com.ecommerce.utility.Log - === START SUITE === Automation Test Suite Started
+2025-07-27 00:18:21 [main] INFO  com.ecommerce.utility.Log - Launching browser: chrome
+2025-07-27 00:18:29 [main] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-07-27 00:18:29 [main] INFO  com.ecommerce.testcases.LoginPageTest - ===== Starting Test: verifyInvalidLogin =====
+2025-07-27 00:18:29 [main] ERROR com.ecommerce.testcases.LoginPageTest - Test execution failed.
+java.lang.RuntimeException: Failed to read JSON file: /Users/dkundu/eclipse-workspace/EcommerceProject/TestData/LoginCredentials.json
+	at com.ecommerce.utility.JsonDataReader.<init>(JsonDataReader.java:20) ~[classes/:?]
+	at com.ecommerce.testcases.LoginPageTest.verifyInvalidLogin(LoginPageTest.java:88) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: java.io.FileNotFoundException: /Users/dkundu/eclipse-workspace/EcommerceProject/TestData/LoginCredentials.json (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:216) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:111) ~[?:?]
+	at java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at com.ecommerce.utility.JsonDataReader.<init>(JsonDataReader.java:16) ~[classes/:?]
+	... 29 more
+2025-07-27 00:18:29 [main] ERROR com.ecommerce.utility.Log - Test Failed: verifyInvalidLogin
+2025-07-27 00:18:30 [main] INFO  com.ecommerce.utility.Log - Screenshot captured: /Users/dkundu/eclipse-workspace/EcommerceProject/Screenshots/verifyInvalidLogin_20250727_001829.png
+2025-07-27 00:18:30 [main] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-07-27 00:18:30 [main] INFO  com.ecommerce.utility.Log - Launching browser: chrome
+2025-07-27 00:18:35 [main] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-07-27 00:18:35 [main] INFO  com.ecommerce.testcases.LoginPageTest - ===== Starting Test: verifyLogin =====
+2025-07-27 00:18:35 [main] ERROR com.ecommerce.testcases.LoginPageTest - Test execution failed.
+java.lang.RuntimeException: Failed to read JSON file: /Users/dkundu/eclipse-workspace/EcommerceProject/TestData/LoginCredentials.json
+	at com.ecommerce.utility.JsonDataReader.<init>(JsonDataReader.java:20) ~[classes/:?]
+	at com.ecommerce.testcases.LoginPageTest.verifyLogin(LoginPageTest.java:36) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.2.jar:7.10.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: java.io.FileNotFoundException: /Users/dkundu/eclipse-workspace/EcommerceProject/TestData/LoginCredentials.json (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:216) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:111) ~[?:?]
+	at java.io.FileReader.<init>(FileReader.java:60) ~[?:?]
+	at com.ecommerce.utility.JsonDataReader.<init>(JsonDataReader.java:16) ~[classes/:?]
+	... 29 more
+2025-07-27 00:18:35 [main] ERROR com.ecommerce.utility.Log - Test Failed: verifyLogin
+2025-07-27 00:18:35 [main] INFO  com.ecommerce.utility.Log - Screenshot captured: /Users/dkundu/eclipse-workspace/EcommerceProject/Screenshots/verifyLogin_20250727_001835.png
+2025-07-27 00:18:35 [main] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-07-27 00:18:35 [main] INFO  com.ecommerce.utility.Log - === END SUITE === Automation Test Suite Finished
