@@ -4,32 +4,23 @@
   <listeners>
     <listener class-name="com.ecommerce.utility.TestListener"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Regression - firefox(failed)">
-    <parameter name="browser" value="firefox"/>
+  <test thread-count="5" parallel="tests" name="Regression - chrome(failed)">
+    <parameter name="browser" value="chrome"/>
     <groups>
       <run>
         <include name="Regression"/>
       </run>
     </groups>
     <classes>
-      <class name="com.ecommerce.testcases.RegisterUserTest">
+      <class name="com.ecommerce.testcases.ProductsPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="registerUser" invocation-numbers="0"/>
+          <include name="verifyAllProductsAndProductDetailPage"/>
           <include name="tearDown"/>
           <include name="afterSuite"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- com.ecommerce.testcases.RegisterUserTest -->
-      <class name="com.ecommerce.testcases.SearchProductTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="afterSuite"/>
-          <include name="beforeSuite"/>
-          <include name="searchMultipleProductsTest"/>
-        </methods>
-      </class> <!-- com.ecommerce.testcases.SearchProductTest -->
+      </class> <!-- com.ecommerce.testcases.ProductsPageTest -->
     </classes>
-  </test> <!-- Regression - firefox(failed) -->
+  </test> <!-- Regression - chrome(failed) -->
 </suite> <!-- Failed suite [Regression Test Suite] -->
