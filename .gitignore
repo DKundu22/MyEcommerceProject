@@ -1,4 +1,23 @@
-/target/
-.classpath
-.settings/
+
+
+# Java build output
+bin/
 target/
+*.class
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA (optional if switching IDEs)
+.idea/
+*.iml
+out/
+
+# Logs
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
