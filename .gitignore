@@ -1,1 +1,59 @@
 /target/
+/.apt_generated/
+/.apt_generated_tests/
+
+# Maven / Gradle build output
+/target/
+/build/
+/out/
+
+# Java binaries
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE / Editor configuration
+# IntelliJ IDEA
+/.idea/
+/*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.settings/
+.classpath
+.project
+*.tmp
+*.bak
+*.swp
+.local.properties
+.loadpath
+.factorypath
+
+# NetBeans
+nbproject/private/
+nbbuild/
+nbdist/
+dist/
+nb-actions.xml
+nb-configuration.xml
+
+# VS Code
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs and reports
+logs/
+*.log
+test-output/
+Screenshots/
+
+# WebDriver manager cache
+~/.wdm/
