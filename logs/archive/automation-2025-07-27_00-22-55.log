@@ -1,0 +1,59 @@
+2025-07-27 00:22:28 [main] INFO  com.ecommerce.utility.Log - Loading configuration properties...
+2025-07-27 00:22:28 [main] INFO  com.ecommerce.utility.Log - Loaded configuration properties.
+2025-07-27 00:22:28 [main] INFO  com.ecommerce.utility.Log - === START SUITE === Automation Test Suite Started
+2025-07-27 00:22:28 [main] INFO  com.ecommerce.utility.Log - Launching browser: chrome
+2025-07-27 00:22:34 [main] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-07-27 00:22:34 [main] INFO  com.ecommerce.testcases.LoginPageTest - ===== Starting Test: verifyInvalidLogin =====
+2025-07-27 00:22:36 [main] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (1f2a51fbfe5aee9b9667d40bbcbbac93)] -> xpath: //a[contains(text(),'Signup / Login')]]
+2025-07-27 00:22:36 [main] INFO  com.ecommerce.pageobjects.LoginPage - Clicked on Signup/Login link.
+2025-07-27 00:22:36 [main] INFO  com.ecommerce.pageobjects.LoginPage - Login form title is visible.
+2025-07-27 00:22:36 [main] DEBUG com.ecommerce.pageobjects.LoginPage - Attempting to enter email: invalid@example.com
+2025-07-27 00:22:36 [main] INFO  com.ecommerce.utility.Log - Typed text: invalid@example.com
+2025-07-27 00:22:36 [main] DEBUG com.ecommerce.pageobjects.LoginPage - Attempting to enter password.
+2025-07-27 00:22:36 [main] INFO  com.ecommerce.utility.Log - Typed text: wrongpassword
+2025-07-27 00:22:36 [main] INFO  com.ecommerce.pageobjects.LoginPage - Clicking Login button.
+2025-07-27 00:22:39 [main] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (1f2a51fbfe5aee9b9667d40bbcbbac93)] -> xpath: //button[@data-qa='login-button']]
+2025-07-27 00:22:39 [main] INFO  com.ecommerce.pageobjects.LoginPage - Login submitted successfully.
+2025-07-27 00:22:39 [main] INFO  com.ecommerce.pageobjects.LoginPage - Login error message displayed: Your email or password is incorrect!
+2025-07-27 00:22:39 [main] INFO  com.ecommerce.testcases.LoginPageTest - Invalid login error message verified for email: invalid@example.com
+2025-07-27 00:22:41 [main] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (1f2a51fbfe5aee9b9667d40bbcbbac93)] -> xpath: //a[contains(text(),'Signup / Login')]]
+2025-07-27 00:22:41 [main] INFO  com.ecommerce.pageobjects.LoginPage - Clicked on Signup/Login link.
+2025-07-27 00:22:41 [main] INFO  com.ecommerce.pageobjects.LoginPage - Login form title is visible.
+2025-07-27 00:22:41 [main] DEBUG com.ecommerce.pageobjects.LoginPage - Attempting to enter email: Dpaul01@yopmail.com
+2025-07-27 00:22:41 [main] INFO  com.ecommerce.utility.Log - Typed text: Dpaul01@yopmail.com
+2025-07-27 00:22:41 [main] DEBUG com.ecommerce.pageobjects.LoginPage - Attempting to enter password.
+2025-07-27 00:22:41 [main] INFO  com.ecommerce.utility.Log - Typed text: wrongpassword
+2025-07-27 00:22:41 [main] INFO  com.ecommerce.pageobjects.LoginPage - Clicking Login button.
+2025-07-27 00:22:43 [main] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (1f2a51fbfe5aee9b9667d40bbcbbac93)] -> xpath: //button[@data-qa='login-button']]
+2025-07-27 00:22:43 [main] INFO  com.ecommerce.pageobjects.LoginPage - Login submitted successfully.
+2025-07-27 00:22:43 [main] INFO  com.ecommerce.pageobjects.LoginPage - Login error message displayed: Your email or password is incorrect!
+2025-07-27 00:22:43 [main] INFO  com.ecommerce.testcases.LoginPageTest - Invalid login error message verified for email: Dpaul01@yopmail.com
+2025-07-27 00:22:43 [main] INFO  com.ecommerce.testcases.LoginPageTest - ===== Test Passed: verifyInvalidLogin =====
+2025-07-27 00:22:43 [main] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-07-27 00:22:43 [main] INFO  com.ecommerce.utility.Log - Launching browser: chrome
+2025-07-27 00:22:49 [main] INFO  com.ecommerce.utility.Log - Navigated to: https://www.automationexercise.com/
+2025-07-27 00:22:49 [main] INFO  com.ecommerce.testcases.LoginPageTest - ===== Starting Test: verifyLogin =====
+2025-07-27 00:22:49 [main] DEBUG com.ecommerce.testcases.LoginPageTest - Using email: Dpaul01@yopmail.com and password: [HIDDEN]
+2025-07-27 00:22:49 [main] INFO  com.ecommerce.pageobjects.LoginPage - Homepage logo visibility check passed.
+2025-07-27 00:22:49 [main] DEBUG com.ecommerce.pageobjects.LoginPage - Logo displayed: true
+2025-07-27 00:22:49 [main] INFO  com.ecommerce.testcases.LoginPageTest - Step 1 passed: Homepage is visible.
+2025-07-27 00:22:51 [main] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (4033394c5664745c074b64a94b639fa5)] -> xpath: //a[contains(text(),'Signup / Login')]]
+2025-07-27 00:22:51 [main] INFO  com.ecommerce.pageobjects.LoginPage - Clicked on Signup/Login link.
+2025-07-27 00:22:51 [main] INFO  com.ecommerce.testcases.LoginPageTest - Step 2 passed: Navigated to login page.
+2025-07-27 00:22:51 [main] INFO  com.ecommerce.pageobjects.LoginPage - Login form title is visible.
+2025-07-27 00:22:51 [main] INFO  com.ecommerce.testcases.LoginPageTest - Step 3 passed: Login form title is visible.
+2025-07-27 00:22:51 [main] DEBUG com.ecommerce.pageobjects.LoginPage - Attempting to enter email: Dpaul01@yopmail.com
+2025-07-27 00:22:51 [main] INFO  com.ecommerce.utility.Log - Typed text: Dpaul01@yopmail.com
+2025-07-27 00:22:51 [main] DEBUG com.ecommerce.pageobjects.LoginPage - Attempting to enter password.
+2025-07-27 00:22:51 [main] INFO  com.ecommerce.utility.Log - Typed text: Test01@$
+2025-07-27 00:22:51 [main] INFO  com.ecommerce.pageobjects.LoginPage - Clicking Login button.
+2025-07-27 00:22:51 [main] INFO  com.ecommerce.utility.Log - Clicked on element: [[ChromeDriver: chrome on mac (4033394c5664745c074b64a94b639fa5)] -> xpath: //button[@data-qa='login-button']]
+2025-07-27 00:22:51 [main] INFO  com.ecommerce.pageobjects.LoginPage - Login submitted successfully.
+2025-07-27 00:22:51 [main] INFO  com.ecommerce.testcases.LoginPageTest - Step 4 passed: Login attempted with valid credentials.
+2025-07-27 00:22:54 [main] INFO  com.ecommerce.pageobjects.LoginPage - Retrieved logged-in username.
+2025-07-27 00:22:54 [main] DEBUG com.ecommerce.pageobjects.LoginPage - Username extracted: Dinesh Paul
+2025-07-27 00:22:54 [main] DEBUG com.ecommerce.testcases.LoginPageTest - Expected username: Dinesh Paul, Actual: Dinesh Paul
+2025-07-27 00:22:54 [main] INFO  com.ecommerce.testcases.LoginPageTest - Step 5 passed: Logged-in username verified successfully.
+2025-07-27 00:22:54 [main] INFO  com.ecommerce.testcases.LoginPageTest - ===== Test Passed: verifyLogin =====
+2025-07-27 00:22:54 [main] INFO  com.ecommerce.utility.Log - Closing browser...
+2025-07-27 00:22:55 [main] INFO  com.ecommerce.utility.Log - === END SUITE === Automation Test Suite Finished
