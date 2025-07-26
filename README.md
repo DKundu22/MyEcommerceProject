@@ -42,10 +42,9 @@ MyEcommerceProject/
 ├── logs/                               # Log files from Log4j2
 ├── test-output/                        # TestNG default report output
 ├── pom.xml                             # Maven dependencies and build config
-├── testng.xml                          # TestNG suite config
 ├── testng-smoke.xml                    # Smoke test suite
-├── testng-regression.xml              # Regression test suite
-└── .gitignore / .classpath / .project # IDE & Git metadata
+├── testng-regression.xml               # Regression test suite
+└── .gitignore 
 ```
 
 ---
