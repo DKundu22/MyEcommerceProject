@@ -3,16 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ecommerce.testcases.LoginPageTest">
+      <class name="com.ecommerce.testcases.CheckoutTest">
         <methods>
-          <include name="verifyInvalidLogin"/>
           <include name="setUp"/>
-          <include name="verifyLogin"/>
           <include name="tearDown"/>
           <include name="afterSuite"/>
           <include name="beforeSuite"/>
+          <include name="testPlaceOrderWithRegistration" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.ecommerce.testcases.LoginPageTest -->
+      </class> <!-- com.ecommerce.testcases.CheckoutTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

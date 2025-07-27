@@ -4,19 +4,20 @@
         <listener class-name="com.ecommerce.utility.TestListener"/>
     </listeners>
 
-    <test name="Regression - chrome">
-        <parameter name="browser" value="chrome"/>
+    <test name="Regression - firefox">
+        <parameter name="browser" value="firefox"/>
         <groups>
             <run>
                 <include name="Regression"/>
             </run>
         </groups>
         <classes>
-            <class name="com.ecommerce.testcases.LoginPageTest"/>
             <class name="com.ecommerce.testcases.RegisterUserTest"/>
+            <class name="com.ecommerce.testcases.LoginPageTest"/>
             <class name="com.ecommerce.testcases.ProductsPageTest"/>
             <class name="com.ecommerce.testcases.SearchProductTest"/>
             <class name="com.ecommerce.testcases.CartTest"/>
+            <class name="com.ecommerce.testcases.CheckoutTest"/>
         </classes>
     </test>
 </suite>

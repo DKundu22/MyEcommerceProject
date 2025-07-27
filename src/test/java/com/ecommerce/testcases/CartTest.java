@@ -155,5 +155,61 @@ public class CartTest extends BaseClass {
             Assert.fail("Test failed due to unexpected error: " + e.getMessage());
         }
     }
+
+
+    /**
+     * Test Case 14: Remove Product from Cart
+     * Steps:
+     * 1. Launch browser
+     * 2. Navigate to url 'http://automationexercise.com'
+     * 3. Verify that home page is visible successfully
+     * 4. Add product to cart
+     * 5. Click 'Cart' button
+     * 6. Verify that cart page is displayed
+     * 7. Click 'X' button corresponding to particular product
+     * 8. Verify that product is removed from the cart
+     */
+    @Test(groups = { "Smoke", "Regression" })
+    public void removeProductFromCartTest() {
+        log.info("===== Starting Test: removeProductFromCartTest =====");
+
+        try {
+            // Step 1 & 2: Browser launch and URL navigation is handled by BaseClass setup
+
+            // Step 3: Verify that home page is visible successfully
+            String pageTitle = getDriver().getTitle();
+            log.debug("Page title: " + pageTitle);
+            Assert.assertTrue(pageTitle.contains("Automation Exercise"), "Home page is not visible.");
+            log.info("Step 3 passed: Home page loaded successfully.");
+
+            // Step 4: Add product to cart
+            cartPage = new CartPage();
+            cartPage.clickProductsButton();
+            cartPage.addFirstProductToCart();
+            cartPage.clickViewCart();
+            log.info("Steps 4-5 passed: Product added and navigated to cart page.");
+
+            // Step 6: Verify cart page is displayed
+            String cartPageTitle = getDriver().getTitle();
+            log.debug("Cart Page title: " + cartPageTitle);
+            Assert.assertTrue(cartPageTitle.contains("Automation Exercise"), "Cart page not displayed.");
+            Assert.assertTrue(cartPage.getCartProducts().size() > 0, "No products found in cart.");
+            log.info("Step 6 passed: Cart page displayed and product present.");
+
+            // Step 7: Click 'X' to delete product
+            cartPage.removeProductFromCart();
+            log.info("Step 7 passed: Clicked remove icon for product.");
+
+            // Step 8: Verify product is removed
+            int remainingProducts = cartPage.getCartProducts().size();
+            Assert.assertEquals(remainingProducts, 0, "Product not removed from cart.");
+            log.info("Step 8 passed: Product successfully removed from cart.");
+            log.info("===== Test Passed: removeProductFromCartTest =====");
+
+        } catch (Exception e) {
+            log.error("Test execution failed.", e);
+            Assert.fail("Test failed due to unexpected error: " + e.getMessage());
+        }
+    }
     
 }

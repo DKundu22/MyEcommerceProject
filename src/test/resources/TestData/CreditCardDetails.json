@@ -1,0 +1,26 @@
+{
+    "valid": {
+      "nameOnCard": "Dinesh Paul",
+      "cardNumber": "4111111111111111",
+      "cvc": "123",
+      "expiryMonth": "12",
+      "expiryYear": "2027"
+    },
+    "invalid": [
+      {
+        "nameOnCard": "",
+        "cardNumber": "1234567890123456",
+        "cvc": "000",
+        "expiryMonth": "01",
+        "expiryYear": "2023"
+      },
+      {
+        "nameOnCard": "Test User",
+        "cardNumber": "9999999999999999",
+        "cvc": "999",
+        "expiryMonth": "",
+        "expiryYear": ""
+      }
+    ]
+  }
+  

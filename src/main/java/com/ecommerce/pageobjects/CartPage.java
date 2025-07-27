@@ -8,7 +8,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 /**
@@ -46,7 +49,10 @@ public class CartPage extends BaseClass {
     private List<WebElement> productQuantities;
 
     @FindBy(xpath = "//tr[contains(@id,'product')]/td[@class='cart_total']/p")
-    private List<WebElement> productTotalPrices;
+    private List<WebElement> productTotalPrices;   
+
+    @FindBy(xpath = "//a[@class='cart_quantity_delete']")
+    private WebElement removeProductBtn;
 
     // Constructor to initialize WebElements
     public CartPage() {
@@ -271,5 +277,21 @@ public class CartPage extends BaseClass {
             throw e;
         }
     }
+
+    /**
+     * Clicks the 'X' button to remove product from cart.
+     */
+    public void removeProductFromCart() {
+        try {
+            action.click(getDriver(), removeProductBtn);
+            log.info("Clicked on remove (X) button for product in cart.");
+            // Wait for the product to be removed from the cart
+            action.waitForCondition(getDriver(), driver -> getCartProducts().isEmpty(), 10, 500);
+        } catch (Exception e) {
+            log.error("Failed to click on remove button.", e);
+            throw e;
+        }
+    }
+
 }
 

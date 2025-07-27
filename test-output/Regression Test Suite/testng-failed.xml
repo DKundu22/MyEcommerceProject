@@ -12,15 +12,35 @@
       </run>
     </groups>
     <classes>
-      <class name="com.ecommerce.testcases.ProductsPageTest">
+      <class name="com.ecommerce.testcases.CartTest">
         <methods>
+          <include name="removeProductFromCartTest"/>
           <include name="setUp"/>
-          <include name="verifyAllProductsAndProductDetailPage"/>
           <include name="tearDown"/>
+          <include name="verifyProductQuantityInCartTest"/>
           <include name="afterSuite"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- com.ecommerce.testcases.ProductsPageTest -->
+      </class> <!-- com.ecommerce.testcases.CartTest -->
+      <class name="com.ecommerce.testcases.SearchProductTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="searchMultipleProductsTest"/>
+        </methods>
+      </class> <!-- com.ecommerce.testcases.SearchProductTest -->
+      <class name="com.ecommerce.testcases.CheckoutTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="placeOrderWithRegistration"/>
+          <include name="checkoutAfterLogin"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.ecommerce.testcases.CheckoutTest -->
     </classes>
   </test> <!-- Regression - chrome(failed) -->
 </suite> <!-- Failed suite [Regression Test Suite] -->

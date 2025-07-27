@@ -9,73 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Regression Test Suite</th></tr>
-<tr><td><a href="#t0">Regression - chrome</a></td><td class="num">6</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">455,870</td><td>Regression</td><td></td></tr>
+<tr><td><a href="#t0">Regression - firefox</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">928,928</td><td>Regression</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression - chrome &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.ecommerce.testcases.ProductsPageTest</td><td><a href="#m0">setUp</a></td><td rowspan="1">1753558294564</td><td rowspan="1">181540</td></tr><tr><th colspan="4">Regression - chrome &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.ecommerce.testcases.ProductsPageTest</td><td><a href="#m1">verifyAllProductsAndProductDetailPage</a></td><td rowspan="1">1753558476114</td><td rowspan="1">1</td></tr><tr><th colspan="4">Regression - chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.ecommerce.testcases.CartTest</td><td><a href="#m2">addMultipleProductsToCartTest</a></td><td rowspan="1">1753558562008</td><td rowspan="1">18676</td></tr><tr class="passedeven"><td><a href="#m3">verifyProductQuantityInCartTest</a></td><td rowspan="1">1753558588085</td><td rowspan="1">20238</td></tr><tr class="passedodd"><td rowspan="2">com.ecommerce.testcases.LoginPageTest</td><td><a href="#m4">verifyInvalidLogin</a></td><td rowspan="1">1753558159670</td><td rowspan="1">8901</td></tr><tr class="passedodd"><td><a href="#m5">verifyLogin</a></td><td rowspan="1">1753558173513</td><td rowspan="1">45852</td></tr><tr class="passedeven"><td rowspan="1">com.ecommerce.testcases.RegisterUserTest</td><td><a href="#m6">registerUser</a></td><td rowspan="1">1753558226381</td><td rowspan="1">67964</td></tr><tr class="passedodd"><td rowspan="1">com.ecommerce.testcases.SearchProductTest</td><td><a href="#m7">searchMultipleProductsTest</a></td><td rowspan="1">1753558510367</td><td rowspan="1">45552</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression - firefox &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.ecommerce.testcases.CartTest</td><td><a href="#m0">addMultipleProductsToCartTest</a></td><td rowspan="1">1753643074143</td><td rowspan="1">18888</td></tr><tr class="passedeven"><td><a href="#m1">removeProductFromCartTest</a></td><td rowspan="1">1753643101401</td><td rowspan="1">61020</td></tr><tr class="passedeven"><td><a href="#m2">verifyProductQuantityInCartTest</a></td><td rowspan="1">1753643170739</td><td rowspan="1">13965</td></tr><tr class="passedodd"><td rowspan="2">com.ecommerce.testcases.CheckoutTest</td><td><a href="#m3">checkoutAfterLogin</a></td><td rowspan="1">1753643192793</td><td rowspan="1">57062</td></tr><tr class="passedodd"><td><a href="#m4">placeOrderWithRegistration</a></td><td rowspan="1">1753643257842</td><td rowspan="1">362090</td></tr><tr class="passedeven"><td rowspan="2">com.ecommerce.testcases.LoginPageTest</td><td><a href="#m5">verifyInvalidLogin</a></td><td rowspan="1">1753642969245</td><td rowspan="1">8270</td></tr><tr class="passedeven"><td><a href="#m6">verifyLogin</a></td><td rowspan="1">1753642985347</td><td rowspan="1">21244</td></tr><tr class="passedodd"><td rowspan="1">com.ecommerce.testcases.ProductsPageTest</td><td><a href="#m7">verifyAllProductsAndProductDetailPage</a></td><td rowspan="1">1753643016726</td><td rowspan="1">19695</td></tr><tr class="passedeven"><td rowspan="1">com.ecommerce.testcases.RegisterUserTest</td><td><a href="#m8">registerUser</a></td><td rowspan="1">1753642707175</td><td rowspan="1">253446</td></tr><tr class="passedodd"><td rowspan="1">com.ecommerce.testcases.SearchProductTest</td><td><a href="#m9">searchMultipleProductsTest</a></td><td rowspan="1">1753643044837</td><td rowspan="1">21276</td></tr></tbody>
 </table>
-<h2>Regression - chrome</h2><h3 id="m0">com.ecommerce.testcases.ProductsPageTest#setUp</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;17.0.13&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9ee992e2ae0cab41525741a15f81f9f1, get {url=https://www.automationexercise.com/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: /var/folders/mx/yg_pnps952g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52692/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9ee992e2ae0cab41525741a15f81f9f1
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:396)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:352)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at com.ecommerce.base.BaseClass.launchApp(BaseClass.java:129)
-	at com.ecommerce.base.BaseClass.setUp(BaseClass.java:43)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:379)
-	... 36 more
-... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.ecommerce.testcases.ProductsPageTest#verifyAllProductsAndProductDetailPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;17.0.13&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9ee992e2ae0cab41525741a15f81f9f1, get {url=https://www.automationexercise.com/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: /var/folders/mx/yg_pnps952g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52692/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9ee992e2ae0cab41525741a15f81f9f1
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:396)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:352)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at com.ecommerce.base.BaseClass.launchApp(BaseClass.java:129)
-	at com.ecommerce.base.BaseClass.setUp(BaseClass.java:43)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:379)
-	... 36 more
-... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.ecommerce.testcases.CartTest#addMultipleProductsToCartTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.ecommerce.testcases.CartTest#verifyProductQuantityInCartTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.ecommerce.testcases.LoginPageTest#verifyInvalidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.ecommerce.testcases.LoginPageTest#verifyLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.ecommerce.testcases.RegisterUserTest#registerUser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Zip=M5H 2N2, Company=SampleCo, Email=jane.roe1@test.com, Address=456 Oak Road, FirstName=Jane, Address2=Ste 5B, Title=Mrs, Offers=TRUE, City=Toronto, Mobile=9.87654321E9, Name=Jane Roe, Newsletter=FALSE, Month=March, Year=1985.0, State=Ontario, Country=Canada, LastName=Roe, Day=12.0, Password=pass@456}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.ecommerce.testcases.SearchProductTest#searchMultipleProductsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Regression - firefox</h2><h3 id="m0">com.ecommerce.testcases.CartTest#addMultipleProductsToCartTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.ecommerce.testcases.CartTest#removeProductFromCartTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.ecommerce.testcases.CartTest#verifyProductQuantityInCartTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.ecommerce.testcases.CheckoutTest#checkoutAfterLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.ecommerce.testcases.CheckoutTest#placeOrderWithRegistration</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Zip=M5H 2N2, Company=SampleCo, Email=jane.roe1@test.com, Address=456 Oak Road, FirstName=Jane, Address2=Ste 5B, Title=Mrs, Offers=TRUE, City=Toronto, Mobile=9.87654321E9, Name=Jane Roe, Newsletter=FALSE, Month=March, Year=1985.0, State=Ontario, Country=Canada, LastName=Roe, Day=12.0, Password=pass@456}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.ecommerce.testcases.LoginPageTest#verifyInvalidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.ecommerce.testcases.LoginPageTest#verifyLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.ecommerce.testcases.ProductsPageTest#verifyAllProductsAndProductDetailPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.ecommerce.testcases.RegisterUserTest#registerUser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Zip=M5H 2N2, Company=SampleCo, Email=jane.roe1@test.com, Address=456 Oak Road, FirstName=Jane, Address2=Ste 5B, Title=Mrs, Offers=TRUE, City=Toronto, Mobile=9.87654321E9, Name=Jane Roe, Newsletter=FALSE, Month=March, Year=1985.0, State=Ontario, Country=Canada, LastName=Roe, Day=12.0, Password=pass@456}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.ecommerce.testcases.SearchProductTest#searchMultipleProductsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
