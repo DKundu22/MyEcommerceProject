@@ -11,7 +11,7 @@ This is a modular and scalable test automation framework built with **Selenium W
 - **Reporting**: ExtentReports
 - **Logging**: Log4j2
 - **CI/CD Support**: Jenkins (configurable)
-- **Data Handling**: Apache POI (Excel)
+- **Data Handling**: Apache POI (Excel), json 
 - **Design Pattern**: Page Object Model (POM)
 
 ---
@@ -28,19 +28,19 @@ MyEcommerceProject/
 │   │   │   ├── actioninterface/         # Action interfaces for driver abstraction
 │   │   │   ├── base/                    # BaseClass: WebDriver setup, teardown
 │   │   │   ├── pageobjects/             # Page classes for POM design
-│   │   │   └── utility/                 # ConfigReader, Logger, ExtentReport setup, ExcelUtil
+│   │   │   └── utility/                 # ConfigReader, Logger, ExtentReport setup, ExcelUtil, JsonDataReader
 │   │   └── resources/                   # Log4j2 config
 │
 │   ├── test/
 │   │   ├── java/com/ecommerce/testcases/  # TestNG test classes
-│   │   └── resources/TestData/            # Excel data for DDT
+│   │   └── resources/TestData/            # Excel & JSON data for DDT
 │
 ├── Configuration/
 │   └── Config.properties               # Environment config: browser, URL, timeouts
 │
 ├── Screenshots/                        # Captured on test failure
 ├── logs/                               # Log files from Log4j2
-├── test-output/                        # TestNG default report output
+├── test-output/                        # TestNG default report output, Extent Report 
 ├── pom.xml                             # Maven dependencies and build config
 ├── testng-smoke.xml                    # Smoke test suite
 ├── testng-regression.xml               # Regression test suite
@@ -54,7 +54,7 @@ MyEcommerceProject/
 - 📦 **Modular Framework**: Built using Page Object Model for maintainability.
 - 📊 **Advanced Reporting**: Integrated ExtentReports with screenshots on failure.
 - 🔐 **External Config Support**: Manage browser & test environment through `Config.properties`.
-- 📁 **Data-Driven Testing (DDT)**: Read data from Excel using Apache POI.
+- 📁 **Data-Driven Testing (DDT)**: Read data from Excel using Apache POI & also read additional data from JSON 
 - 📄 **Grouped Test Suites**: Separate `testng-smoke.xml` and `testng-regression.xml`.
 - 🪵 **Robust Logging**: Log4j2 for granular logging and test debugging.
 - 📸 **Screenshots on Failure**: Automatically captured and stored in `Screenshots/`.
@@ -63,13 +63,14 @@ MyEcommerceProject/
 
 ## 🧪 Test Scenarios Implemented
 
-| Test Case                      | Description                                           |
+| Test Cases                    | Description                                           |
 |-------------------------------|-------------------------------------------------------|
-| **LoginPageTest**             | Validates login functionality                        |
+| **LoginPageTest**             | Validates login functionality(both valid and invalid data) |
 | **RegisterUserTest**          | Automates user registration with data-driven input   |
 | **ProductsPageTest**          | Validates 'All Products' view and product presence   |
 | **SearchProductTest**         | Searches for products and verifies search results    |
 | **CartTest**                  | Adds products to cart, updates quantity, validates total |
+| **CheckoutTest**              | Checkout after login, Add product to cart > Register > checkout|
 
 ---
 
